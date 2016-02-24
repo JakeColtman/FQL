@@ -15,9 +15,9 @@ class ParserTests(unittest.TestCase):
 
     def test_parser_splits_out_ctes(self):
         parser = Parser()
-        output = parser.parse("with test_cte as (SELECT 1)  Select 2")
+        output = parser.parse("with test_cte as ( SELECT 1 )  Select 2")
         self.assertEqual(len(output), 2)
-        self.assertEqual(output[0], "SELECT 1")
+        self.assertEqual(output[0], "SELECT 1".lower())
 
 if __name__ == '__main__':
     unittest.main()
