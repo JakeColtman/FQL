@@ -1,3 +1,3 @@
 from collections import namedtuple
 
-Query = namedtuple("Query", ["name", "query"])
+Query = namedtuple("Query", ["name", "query", "dependencies"])

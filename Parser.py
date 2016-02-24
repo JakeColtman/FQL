@@ -26,6 +26,7 @@ class Parser:
 
     def _split_out_sub_clause(self, wordList):
 
+        '''Todo: this has to be able to recognise dependencies'''
         nextWord = wordList.next_word()
         while nextWord != "(":
             nextWord = wordList.next_word()
@@ -43,7 +44,7 @@ class Parser:
     def parse(self, query):
 
         if ";" in query or "with" not in query:
-            return [Query("test", x) for x in query.split(";")]
+            return [Query("test", x, []) for x in query.split(";")]
 
         output = []
         wordList = WordList(query)
@@ -52,10 +53,10 @@ class Parser:
         while wordList.peek() is not False:
             nextWord = wordList.next_word()
             if nextWord == "select":
-                output.append(Query("final query", " ".join(["select"] + wordList.wordList)))
+                output.append(Query("final query", " ".join(["select"] + wordList.wordList), []))
                 break
             elif nextWord in ["as"]:
-                output.append(Query(standingName, " ".join(self._split_out_sub_clause(wordList))))
+                output.append(Query(standingName, " ".join(self._split_out_sub_clause(wordList)), []))
             else:
                 standingName = nextWord
         return output
