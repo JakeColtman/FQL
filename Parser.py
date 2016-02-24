@@ -47,15 +47,18 @@ class Parser:
 
         output = []
         wordList = WordList(query)
+        standingName = ""
+
         while wordList.peek() is not False:
             nextWord = wordList.next_word()
             if nextWord == "select":
-                output.append(["select"] + wordList.wordList)
+                output.append(Query("final query", " ".join(["select"] + wordList.wordList)))
                 break
-            elif nextWord in ["with", "as"]:
-                output.append(self._split_out_sub_clause(wordList))
-        print([Query("test", " ".join(x)) for x in output])
-        return [Query("test", " ".join(x)) for x in output]
+            elif nextWord in ["as"]:
+                output.append(Query(standingName, " ".join(self._split_out_sub_clause(wordList))))
+            else:
+                standingName = nextWord
+        return output
 
 
 p = Parser()
