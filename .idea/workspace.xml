@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fe90b7d-2d7e-4da8-b9f3-fbaedf2e0897" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Parser.py" afterPath="$PROJECT_DIR$/Parser.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/ParserTests.py" afterPath="$PROJECT_DIR$/Tests/ParserTests.py" />
     </list>
     <ignored path="FQL.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,8 +58,8 @@
       <file leaf-file-name="ParserTests.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Tests/ParserTests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.1623264">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.25086805">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -86,8 +86,8 @@
         <option value="$PROJECT_DIR$/Repository.py" />
         <option value="$PROJECT_DIR$/Tests/RepositoryTests.py" />
         <option value="$PROJECT_DIR$/Tests/Parser.py" />
-        <option value="$PROJECT_DIR$/Tests/ParserTests.py" />
         <option value="$PROJECT_DIR$/Parser.py" />
+        <option value="$PROJECT_DIR$/Tests/ParserTests.py" />
       </list>
     </option>
   </component>
@@ -372,6 +372,9 @@
     <history-entry file="Nosetests_in_ParserTests - 2016.02.24 at 18h 08m 37s.xml">
       <configuration name="Nosetests in ParserTests" configurationId="tests" />
     </history-entry>
+    <history-entry file="Nosetests_in_ParserTests - 2016.02.24 at 18h 10m 20s.xml">
+      <configuration name="Nosetests in ParserTests" configurationId="tests" />
+    </history-entry>
     <history-entry file="Nosetests_in_RepositoryTests - 2016.02.24 at 18h 03m 39s.xml">
       <configuration name="Nosetests in RepositoryTests" configurationId="tests" />
     </history-entry>
@@ -437,8 +440,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/ParserTests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1623264">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.25086805">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
