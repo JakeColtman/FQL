@@ -4,4 +4,4 @@ class Parser:
         print("I'm a parser")
 
     def parse(self, query):
-        return [query]
+        return query.split(";")
