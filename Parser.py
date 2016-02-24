@@ -26,7 +26,6 @@ class Parser:
             nextWord = wordList.next_word()
         bracketDepth = 1
         output = []
-
         while bracketDepth > 0 and wordList.peek() is not False:
             nextWord = wordList.next_word()
             if nextWord == "(":
@@ -41,14 +40,12 @@ class Parser:
         if ";" in query or "with" not in query: return query.split(";")
 
         output = []
-
         wordList = WordList(query)
-        inCTE = False
         while wordList.peek() is not False:
             nextWord = wordList.next_word()
-            if nextWord == "with":
-                inCTE = True
-                cteQuery = self._split_out_sub_clause(wordList)
-            else:
-                output.append(nextWord)
-        return [" ".join(cteQuery), " ".join(output)]
+            if nextWord == "select":
+                output.append(["select"] + wordList.wordList)
+                break
+            elif nextWord in ["with", "as"]:
+                output.append(self._split_out_sub_clause(wordList))
+        return [" ".join(x) for x in output]
