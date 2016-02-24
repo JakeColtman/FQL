@@ -40,6 +40,8 @@ class Parser:
 
         if ";" in query or "with" not in query: return query.split(";")
 
+        output = []
+
         wordList = WordList(query)
         inCTE = False
         while wordList.peek() is not False:
@@ -47,4 +49,6 @@ class Parser:
             if nextWord == "with":
                 inCTE = True
                 cteQuery = self._split_out_sub_clause(wordList)
-        return [" ".join(cteQuery), query]
+            else:
+                output.append(nextWord)
+        return [" ".join(cteQuery), " ".join(output)]
