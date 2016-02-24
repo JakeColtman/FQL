@@ -1,5 +1,8 @@
 class WordList:
     def __init__(self, queryString):
+        queryString = queryString.replace(",", " , ")
+        queryString = queryString.replace("(", " ( ")
+        queryString = queryString.replace(")", " ) ")
         self.wordList = queryString.lower().split()
 
     def next_word(self):
