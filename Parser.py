@@ -42,7 +42,8 @@ class Parser:
 
     def parse(self, query):
 
-        if ";" in query or "with" not in query: return query.split(";")
+        if ";" in query or "with" not in query:
+            return [Query("test", x) for x in query.split(";")]
 
         output = []
         wordList = WordList(query)
@@ -53,4 +54,9 @@ class Parser:
                 break
             elif nextWord in ["with", "as"]:
                 output.append(self._split_out_sub_clause(wordList))
-        return [" ".join(x) for x in output]
+        print([Query("test", " ".join(x)) for x in output])
+        return [Query("test", " ".join(x)) for x in output]
+
+
+p = Parser()
+p.parse("SELECT 1 ; Select 2")
