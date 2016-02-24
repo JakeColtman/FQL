@@ -1,3 +1,5 @@
+from Query import Query
+
 class WordList:
     def __init__(self, queryString):
         queryString = queryString.replace(",", " , ")
