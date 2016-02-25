@@ -15,7 +15,6 @@ class QueryGenerator:
             dependentQuery = self.repo.retrieve_query(depName)
             output.append(dependentQuery)
             newDeps += dependentQuery.dependencies
-        print(output)
         return output
 
     def generate_query(self, query_names):
@@ -23,7 +22,10 @@ class QueryGenerator:
         if len(order_output) == 1: return order_output[0].query
         order_output = list(reversed(order_output))
         output = "with "
-        for item in order_output:
-            output += "{0} as ({1})".format(item.name, item.query)
+        for item in order_output[:-1]:
+            output += "{0} as ({1}),".format(item.name, item.query)
+        output = output[:-1]
+        output += item.query
         return output
+
 
