@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fe90b7d-2d7e-4da8-b9f3-fbaedf2e0897" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Parser.py" afterPath="$PROJECT_DIR$/Parser.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/ParserTests.py" afterPath="$PROJECT_DIR$/Tests/ParserTests.py" />
     </list>
     <ignored path="FQL.iws" />
@@ -50,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/Parser.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+              <caret line="70" column="49" selection-start-line="70" selection-start-column="49" selection-end-line="70" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -60,7 +60,7 @@
         <entry file="file://$PROJECT_DIR$/Query.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="59" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
+              <caret line="2" column="59" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -69,8 +69,8 @@
       <file leaf-file-name="ParserTests.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Tests/ParserTests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.72226596">
-              <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.8292683">
+              <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -192,27 +192,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Python tests.Nosetests in ParserTests">
-    <configuration default="false" name="Nosetests in RepositoryTests" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="FQL" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tests/RepositoryTests.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="Nosetests in ParserTests" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -266,6 +245,48 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/process.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Nosetest ParserTests.test_dependency_finder" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="FQL" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tests/ParserTests.py" />
+      <option name="CLASS_NAME" value="ParserTests" />
+      <option name="METHOD_NAME" value="test_dependency_finder" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Nosetest ParserTests.test_parser_splits_queries_on_semicolon" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="FQL" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tests/ParserTests.py" />
+      <option name="CLASS_NAME" value="ParserTests" />
+      <option name="METHOD_NAME" value="test_parser_splits_queries_on_semicolon" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -390,18 +411,20 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.Nosetests in RepositoryTests" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Nosetests in ParserTests" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Parser" />
-      <item index="3" class="java.lang.String" itemvalue="Python.process" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python tests.Nosetests in ParserTests" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Parser" />
+      <item index="2" class="java.lang.String" itemvalue="Python.process" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Nosetest ParserTests.test_dependency_finder" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Nosetest ParserTests.test_parser_splits_queries_on_semicolon" />
     </list>
     <recent_temporary>
-      <list size="4">
+      <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python tests.Nosetests in ParserTests" />
-        <item index="1" class="java.lang.String" itemvalue="Python.process" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Parser" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Nosetests in RepositoryTests" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Nosetest ParserTests.test_parser_splits_queries_on_semicolon" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Nosetest ParserTests.test_dependency_finder" />
+        <item index="3" class="java.lang.String" itemvalue="Python.process" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Parser" />
       </list>
     </recent_temporary>
   </component>
@@ -416,34 +439,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Nosetests_in_ParserTests - 2016.02.24 at 19h 03m 00s.xml">
+    <history-entry file="Nosetest_ParserTests_test_dependency_finder - 2016.02.25 at 18h 14m 49s.xml">
+      <configuration name="Nosetest ParserTests.test_dependency_finder" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetest_ParserTests_test_dependency_finder - 2016.02.25 at 18h 14m 57s.xml">
+      <configuration name="Nosetest ParserTests.test_dependency_finder" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetest_ParserTests_test_parser_splits_queries_on_semicolon - 2016.02.25 at 18h 17m 08s.xml">
+      <configuration name="Nosetest ParserTests.test_parser_splits_queries_on_semicolon" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetest_ParserTests_test_parser_splits_queries_on_semicolon - 2016.02.25 at 18h 17m 13s.xml">
+      <configuration name="Nosetest ParserTests.test_parser_splits_queries_on_semicolon" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetest_ParserTests_test_parser_splits_queries_on_semicolon - 2016.02.25 at 18h 17m 19s.xml">
+      <configuration name="Nosetest ParserTests.test_parser_splits_queries_on_semicolon" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_ParserTests - 2016.02.25 at 18h 14m 29s.xml">
       <configuration name="Nosetests in ParserTests" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_ParserTests - 2016.02.24 at 19h 04m 56s.xml">
+    <history-entry file="Nosetests_in_ParserTests - 2016.02.25 at 18h 16m 53s.xml">
       <configuration name="Nosetests in ParserTests" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_ParserTests - 2016.02.24 at 19h 06m 06s.xml">
+    <history-entry file="Nosetests_in_ParserTests - 2016.02.25 at 18h 17m 25s.xml">
       <configuration name="Nosetests in ParserTests" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_ParserTests - 2016.02.24 at 19h 07m 51s.xml">
+    <history-entry file="Nosetests_in_ParserTests - 2016.02.25 at 18h 18m 07s.xml">
       <configuration name="Nosetests in ParserTests" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_ParserTests - 2016.02.24 at 19h 10m 59s.xml">
-      <configuration name="Nosetests in ParserTests" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_in_ParserTests - 2016.02.24 at 19h 11m 23s.xml">
-      <configuration name="Nosetests in ParserTests" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_in_ParserTests - 2016.02.24 at 19h 11m 41s.xml">
-      <configuration name="Nosetests in ParserTests" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_in_ParserTests - 2016.02.24 at 19h 12m 09s.xml">
-      <configuration name="Nosetests in ParserTests" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_in_ParserTests - 2016.02.24 at 19h 24m 24s.xml">
-      <configuration name="Nosetests in ParserTests" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_in_ParserTests - 2016.02.25 at 18h 08m 19s.xml">
+    <history-entry file="Nosetests_in_ParserTests - 2016.02.25 at 18h 18m 40s.xml">
       <configuration name="Nosetests in ParserTests" configurationId="tests" />
     </history-entry>
   </component>
@@ -570,26 +593,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Parser.py">
+    <entry file="file://$PROJECT_DIR$/Query.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <caret line="2" column="59" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="59" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Query.py">
+    <entry file="file://$PROJECT_DIR$/Parser.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="59" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
+          <caret line="70" column="49" selection-start-line="70" selection-start-column="49" selection-end-line="70" selection-end-column="49" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/ParserTests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72226596">
-          <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.8292683">
+          <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>

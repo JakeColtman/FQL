@@ -41,6 +41,14 @@ class Parser:
             output.append(nextWord)
         return output[:-1]
 
+    def _update_dependencies(self, queryList):
+        for baseQuery in queryList:
+            for query in queryList:
+                if query.name in baseQuery.query:
+                    baseQuery.dependencies.append(query.name)
+        return queryList
+
+
     def parse(self, query):
 
         if ";" in query or "with" not in query:
@@ -59,6 +67,9 @@ class Parser:
                 output.append(Query(standingName, " ".join(self._split_out_sub_clause(wordList)), []))
             else:
                 standingName = nextWord
+
+        output = self._update_dependencies(output)
+
         return output
 
 
