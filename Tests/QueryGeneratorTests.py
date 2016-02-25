@@ -67,10 +67,11 @@ class QueryGeneratorTests(unittest.TestCase):
         repo.add_queries([q1,q2,q3])
         qg = QueryGenerator(repo)
         output = qg.generate_query(["Q1", "Q2", "Q3"])
+        print("here")
+        print(output)
         self.assertTrue("select 1" in output)
         self.assertTrue("select 2" in output)
         self.assertTrue("select 3" in output)
-        self.assertTrue("Q1" in output)
         self.assertTrue("Q2" in output)
         self.assertTrue("Q3" in output)
 

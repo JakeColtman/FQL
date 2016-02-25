@@ -51,6 +51,8 @@ class Parser:
 
     def parse(self, query):
 
+        query = query.replace("--", " ")
+
         if ";" in query or "with" not in query:
             return [Query("test", x.lower(), []) for x in query.split(";")]
 

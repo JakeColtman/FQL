@@ -12,7 +12,7 @@ class ParserTests(unittest.TestCase):
         parser = Parser()
         output = parser.parse("SELECT 1 ; Select 2")
         self.assertTrue(len(output) == 2)
-        self.assertEqual(" Select 2", output[-1].query)
+        self.assertEqual(" select 2", output[-1].query)
 
     def test_parser_splits_out_ctes(self):
         parser = Parser()
@@ -64,5 +64,10 @@ class ParserTests(unittest.TestCase):
         print(output)
         self.assertTrue("testquery1" in output[1].dependencies)
 
+    def test_parser_removes_comments(self):
+        parser = Parser()
+        query = "select -- 1"
+        output = parser.parse(query)
+        self.assertEqual("select   1" , output[0].query)
 if __name__ == '__main__':
     unittest.main()

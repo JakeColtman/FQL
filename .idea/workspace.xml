@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fe90b7d-2d7e-4da8-b9f3-fbaedf2e0897" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Parser.py" afterPath="$PROJECT_DIR$/Parser.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QueryGenerator.py" afterPath="$PROJECT_DIR$/QueryGenerator.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/ParserTests.py" afterPath="$PROJECT_DIR$/Tests/ParserTests.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/QueryGeneratorTests.py" afterPath="$PROJECT_DIR$/Tests/QueryGeneratorTests.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/process.py" afterPath="$PROJECT_DIR$/process.py" />
     </list>
     <ignored path="FQL.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QueryGenerator.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="QueryGenerator.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/QueryGenerator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40125886">
-              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
@@ -62,7 +66,7 @@
         <entry file="file://$PROJECT_DIR$/Tests/QueryGeneratorTests.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="68" selection-end-column="54" />
+              <caret line="73" column="45" selection-start-line="73" selection-start-column="45" selection-end-line="73" selection-end-column="45" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -74,7 +78,7 @@
         <entry file="file://$PROJECT_DIR$/Parser.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
+              <caret line="53" column="38" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -94,7 +98,7 @@
         <entry file="file://$PROJECT_DIR$/Tests/ParserTests.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="64" column="29" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
+              <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -102,11 +106,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="process.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="process.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/process.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.136876">
+              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
@@ -145,14 +149,14 @@
         <option value="$PROJECT_DIR$/Tests/Parser.py" />
         <option value="$PROJECT_DIR$/Tests/Query.py" />
         <option value="$PROJECT_DIR$/Query.py" />
-        <option value="$PROJECT_DIR$/Tests/ParserTests.py" />
         <option value="$PROJECT_DIR$/Visualize.py" />
-        <option value="$PROJECT_DIR$/process.py" />
         <option value="$PROJECT_DIR$/Repository.py" />
         <option value="$PROJECT_DIR$/Tests/RepositoryTests.py" />
         <option value="$PROJECT_DIR$/Parser.py" />
-        <option value="$PROJECT_DIR$/Tests/QueryGeneratorTests.py" />
+        <option value="$PROJECT_DIR$/Tests/ParserTests.py" />
         <option value="$PROJECT_DIR$/QueryGenerator.py" />
+        <option value="$PROJECT_DIR$/Tests/QueryGeneratorTests.py" />
+        <option value="$PROJECT_DIR$/process.py" />
       </list>
     </option>
   </component>
@@ -230,45 +234,7 @@
       <recent name="C:\Users\j.coltman\Documents\GitHub\FQL" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.QueryGenerator">
-    <configuration default="false" name="Repository" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="FQL" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Repository.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Nosetests in RepositoryTests" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="FQL" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tests/RepositoryTests.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.process">
     <configuration default="false" name="Nosetests in FQL" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -326,6 +292,44 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/QueryGenerator.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="process" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="FQL" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/process.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Nosetests in ParserTests" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="FQL" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tests/ParserTests.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -451,19 +455,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.Repository" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Nosetests in RepositoryTests" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Nosetests in FQL" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Nosetests in QueryGeneratorTests" />
-      <item index="4" class="java.lang.String" itemvalue="Python.QueryGenerator" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.Nosetests in FQL" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Nosetests in QueryGeneratorTests" />
+      <item index="2" class="java.lang.String" itemvalue="Python.QueryGenerator" />
+      <item index="3" class="java.lang.String" itemvalue="Python.process" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Nosetests in ParserTests" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.QueryGenerator" />
+        <item index="0" class="java.lang.String" itemvalue="Python.process" />
         <item index="1" class="java.lang.String" itemvalue="Python tests.Nosetests in QueryGeneratorTests" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Nosetests in FQL" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Nosetests in RepositoryTests" />
-        <item index="4" class="java.lang.String" itemvalue="Python.Repository" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Nosetests in ParserTests" />
+        <item index="3" class="java.lang.String" itemvalue="Python.QueryGenerator" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Nosetests in FQL" />
       </list>
     </recent_temporary>
   </component>
@@ -478,34 +482,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Nosetests_in_QueryGeneratorTests - 2016.02.25 at 19h 03m 14s.xml">
+    <history-entry file="Nosetests_in_ParserTests - 2016.02.25 at 19h 23m 21s.xml">
+      <configuration name="Nosetests in ParserTests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_ParserTests - 2016.02.25 at 19h 23m 41s.xml">
+      <configuration name="Nosetests in ParserTests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_ParserTests - 2016.02.25 at 19h 24m 00s.xml">
+      <configuration name="Nosetests in ParserTests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_QueryGeneratorTests - 2016.02.25 at 19h 24m 06s.xml">
       <configuration name="Nosetests in QueryGeneratorTests" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_QueryGeneratorTests - 2016.02.25 at 19h 04m 12s.xml">
+    <history-entry file="Nosetests_in_QueryGeneratorTests - 2016.02.25 at 19h 24m 28s.xml">
       <configuration name="Nosetests in QueryGeneratorTests" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_QueryGeneratorTests - 2016.02.25 at 19h 05m 13s.xml">
+    <history-entry file="Nosetests_in_QueryGeneratorTests - 2016.02.25 at 19h 24m 49s.xml">
       <configuration name="Nosetests in QueryGeneratorTests" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_QueryGeneratorTests - 2016.02.25 at 19h 05m 22s.xml">
+    <history-entry file="Nosetests_in_QueryGeneratorTests - 2016.02.25 at 19h 25m 00s.xml">
       <configuration name="Nosetests in QueryGeneratorTests" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_QueryGeneratorTests - 2016.02.25 at 19h 05m 38s.xml">
+    <history-entry file="Nosetests_in_QueryGeneratorTests - 2016.02.25 at 19h 25m 41s.xml">
       <configuration name="Nosetests in QueryGeneratorTests" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_QueryGeneratorTests - 2016.02.25 at 19h 06m 18s.xml">
+    <history-entry file="Nosetests_in_QueryGeneratorTests - 2016.02.25 at 19h 26m 48s.xml">
       <configuration name="Nosetests in QueryGeneratorTests" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_QueryGeneratorTests - 2016.02.25 at 19h 06m 59s.xml">
-      <configuration name="Nosetests in QueryGeneratorTests" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_in_QueryGeneratorTests - 2016.02.25 at 19h 12m 06s.xml">
-      <configuration name="Nosetests in QueryGeneratorTests" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_in_QueryGeneratorTests - 2016.02.25 at 19h 13m 09s.xml">
-      <configuration name="Nosetests in QueryGeneratorTests" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_in_QueryGeneratorTests - 2016.02.25 at 19h 13m 29s.xml">
+    <history-entry file="Nosetests_in_QueryGeneratorTests - 2016.02.25 at 19h 27m 03s.xml">
       <configuration name="Nosetests in QueryGeneratorTests" configurationId="tests" />
     </history-entry>
   </component>
@@ -604,24 +608,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Query.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="59" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/ParserTests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="64" column="29" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Visualize.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -629,24 +615,6 @@
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/process.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -668,10 +636,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Query.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="59" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="53" column="38" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/ParserTests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/QueryGeneratorTests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="68" selection-end-column="54" />
+          <caret line="73" column="45" selection-start-line="73" selection-start-column="45" selection-end-line="73" selection-end-column="45" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
@@ -680,8 +674,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/QueryGenerator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40125886">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.136876">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
           <folding>
             <element signature="e#0#33#0" expanded="true" />
           </folding>

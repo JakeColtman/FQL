@@ -25,7 +25,5 @@ class QueryGenerator:
         for item in order_output[:-1]:
             output += "{0} as ({1}),".format(item.name, item.query)
         output = output[:-1]
-        output += item.query
+        output += order_output[-1].query
         return output
-
-
