@@ -47,5 +47,11 @@ class ParserTests(unittest.TestCase):
         self.assertEqual(output[0].name, "test_cte".lower())
         self.assertEqual(output[1].name, "test_cte2".lower())
         self.assertEqual(output[2].name, "final query".lower())
+
+    def test_parse_identified_dependency(self):
+        parser = Parser()
+        output = parser.parse("with test_cte as (SELECT 1),test_cte2 as (SELECT 3 )  Select * from test_cte")
+        self.assertTrue("test_cte" in output[-1].dependencies)
+        
 if __name__ == '__main__':
     unittest.main()
