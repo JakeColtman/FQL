@@ -21,3 +21,9 @@ class QueryGenerator:
     def generate_query(self, query_names):
         order_output = self._get_relevant_queries_from_repo(query_names)
         if len(order_output) == 1: return order_output[0].query
+        order_output = list(reversed(order_output))
+        output = "with "
+        for item in order_output:
+            output += "{0} as ({1})".format(item.name, item.query)
+        return output
+

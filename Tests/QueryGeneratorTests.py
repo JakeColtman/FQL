@@ -58,6 +58,18 @@ class QueryGeneratorTests(unittest.TestCase):
         repo.add_query(q1)
         qg = QueryGenerator(repo)
         self.assertEqual("select 1", qg.generate_query(["1"]))
-        
+
+    def test_qg_returns_a_query_with_all_dependencies_in(self):
+        q1 = Query("1", "select 1", [])
+        q2 = Query("2", "select 2", [])
+        q3 = Query("3", "select 3", [])
+        repo = Repository()
+        repo.add_queries([q1,q2,q3])
+        qg = QueryGenerator(repo)
+        output = qg.generate_query(["1", "2", "3"])
+        self.assertTrue("select 1" in output)
+        self.assertTrue("select 2" in output)
+        self.assertTrue("select 3" in output)
+
 if __name__ == '__main__':
     unittest.main()
