@@ -9,3 +9,6 @@ class Repository:
 
     def add_queries(self, queries):
         return all([self.add_query(x) for x in queries])
+
+    def retrieve_query(self, name):
+        return []

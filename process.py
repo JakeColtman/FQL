@@ -11,5 +11,5 @@ process(repo, Parser(), ["with test_cte as (SELECT 1),test_cte2 as (SELECT 3 )  
 print(repo.queries)
 
 parser = Parser()
-output = parser.parse("with test_cte as (SELECT 1),test_cte2 as (SELECT 3 )  Select * from test_cte")
+output = parser.parse("with test_cte as (SELECT 1),test_cte2 as (SELECT 3 )  Select * from test_cte left join test_cte2")
 visualize(output)
