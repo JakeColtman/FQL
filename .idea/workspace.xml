@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fe90b7d-2d7e-4da8-b9f3-fbaedf2e0897" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QueryGenerator.py" afterPath="$PROJECT_DIR$/QueryGenerator.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/QueryGeneratorTests.py" afterPath="$PROJECT_DIR$/Tests/QueryGeneratorTests.py" />
     </list>
     <ignored path="FQL.iws" />
@@ -46,10 +45,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QueryGenerator.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="QueryGenerator.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/QueryGenerator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36113298">
+            <state vertical-scroll-proportion="0.0">
               <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
@@ -58,11 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QueryGeneratorTests.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="QueryGeneratorTests.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Tests/QueryGeneratorTests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="73" column="23" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.83949643">
+              <caret line="68" column="50" selection-start-line="68" selection-start-column="50" selection-end-line="68" selection-end-column="50" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -151,8 +150,8 @@
         <option value="$PROJECT_DIR$/Repository.py" />
         <option value="$PROJECT_DIR$/Tests/RepositoryTests.py" />
         <option value="$PROJECT_DIR$/Parser.py" />
-        <option value="$PROJECT_DIR$/Tests/QueryGeneratorTests.py" />
         <option value="$PROJECT_DIR$/QueryGenerator.py" />
+        <option value="$PROJECT_DIR$/Tests/QueryGeneratorTests.py" />
       </list>
     </option>
   </component>
@@ -478,12 +477,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Nosetests_in_QueryGeneratorTests - 2016.02.25 at 19h 02m 42s.xml">
-      <configuration name="Nosetests in QueryGeneratorTests" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_in_QueryGeneratorTests - 2016.02.25 at 19h 03m 01s.xml">
-      <configuration name="Nosetests in QueryGeneratorTests" configurationId="tests" />
-    </history-entry>
     <history-entry file="Nosetests_in_QueryGeneratorTests - 2016.02.25 at 19h 03m 14s.xml">
       <configuration name="Nosetests in QueryGeneratorTests" configurationId="tests" />
     </history-entry>
@@ -506,6 +499,12 @@
       <configuration name="Nosetests in QueryGeneratorTests" configurationId="tests" />
     </history-entry>
     <history-entry file="Nosetests_in_QueryGeneratorTests - 2016.02.25 at 19h 12m 06s.xml">
+      <configuration name="Nosetests in QueryGeneratorTests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_QueryGeneratorTests - 2016.02.25 at 19h 13m 09s.xml">
+      <configuration name="Nosetests in QueryGeneratorTests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_QueryGeneratorTests - 2016.02.25 at 19h 13m 29s.xml">
       <configuration name="Nosetests in QueryGeneratorTests" configurationId="tests" />
     </history-entry>
   </component>
@@ -642,6 +641,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Repository.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -660,30 +667,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Parser.py">
+    <entry file="file://$PROJECT_DIR$/QueryGenerator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
-          <folding />
+          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/QueryGeneratorTests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="73" column="23" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.83949643">
+          <caret line="68" column="50" selection-start-line="68" selection-start-column="50" selection-end-line="68" selection-end-column="50" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/QueryGenerator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36113298">
-          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
           </folding>
         </state>
       </provider>
