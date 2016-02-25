@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fe90b7d-2d7e-4da8-b9f3-fbaedf2e0897" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QueryGenerator.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/QueryGeneratorTests.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QueryGenerator.py" afterPath="$PROJECT_DIR$/QueryGenerator.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/QueryGeneratorTests.py" afterPath="$PROJECT_DIR$/Tests/QueryGeneratorTests.py" />
     </list>
     <ignored path="FQL.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,7 +28,7 @@
         <entry file="file://$PROJECT_DIR$/Repository.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+              <caret line="12" column="22" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -47,21 +46,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QueryGenerator.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="QueryGenerator.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/QueryGenerator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.14712824">
+              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QueryGeneratorTests.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="QueryGeneratorTests.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tests/QueryGeneratorTests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2808812">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -477,25 +476,25 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Nosetest_ParserTests_test_parser_splits_queries_on_semicolon - 2016.02.25 at 18h 17m 19s.xml">
-      <configuration name="Nosetest ParserTests.test_parser_splits_queries_on_semicolon" configurationId="tests" />
-    </history-entry>
     <history-entry file="Nosetests_in_FQL - 2016.02.25 at 18h 33m 35s.xml">
       <configuration name="Nosetests in FQL" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_ParserTests - 2016.02.25 at 18h 17m 25s.xml">
-      <configuration name="Nosetests in ParserTests" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_in_ParserTests - 2016.02.25 at 18h 18m 07s.xml">
-      <configuration name="Nosetests in ParserTests" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_in_ParserTests - 2016.02.25 at 18h 18m 40s.xml">
-      <configuration name="Nosetests in ParserTests" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_in_ParserTests - 2016.02.25 at 18h 21m 54s.xml">
-      <configuration name="Nosetests in ParserTests" configurationId="tests" />
-    </history-entry>
     <history-entry file="Nosetests_in_QueryGeneratorTests - 2016.02.25 at 18h 40m 15s.xml">
+      <configuration name="Nosetests in QueryGeneratorTests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_QueryGeneratorTests - 2016.02.25 at 18h 41m 55s.xml">
+      <configuration name="Nosetests in QueryGeneratorTests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_QueryGeneratorTests - 2016.02.25 at 18h 42m 08s.xml">
+      <configuration name="Nosetests in QueryGeneratorTests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_QueryGeneratorTests - 2016.02.25 at 18h 42m 39s.xml">
+      <configuration name="Nosetests in QueryGeneratorTests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_QueryGeneratorTests - 2016.02.25 at 18h 42m 58s.xml">
+      <configuration name="Nosetests in QueryGeneratorTests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_QueryGeneratorTests - 2016.02.25 at 18h 43m 13s.xml">
       <configuration name="Nosetests in QueryGeneratorTests" configurationId="tests" />
     </history-entry>
     <history-entry file="Nosetests_in_RepositoryTests - 2016.02.25 at 18h 30m 29s.xml">
@@ -652,7 +651,7 @@
     <entry file="file://$PROJECT_DIR$/Repository.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -667,21 +666,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/QueryGenerator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/QueryGeneratorTests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2808812">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QueryGenerator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14712824">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
