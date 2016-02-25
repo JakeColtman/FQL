@@ -52,7 +52,7 @@ class Parser:
     def parse(self, query):
 
         if ";" in query or "with" not in query:
-            return [Query("test", x, []) for x in query.split(";")]
+            return [Query("test", x.lower(), []) for x in query.split(";")]
 
         output = []
         wordList = WordList(query)
