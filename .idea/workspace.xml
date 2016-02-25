@@ -46,21 +46,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QueryGenerator.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="QueryGenerator.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/QueryGenerator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.14712824">
-              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QueryGeneratorTests.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="QueryGeneratorTests.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Tests/QueryGeneratorTests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.45476004">
+              <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -149,8 +149,8 @@
         <option value="$PROJECT_DIR$/process.py" />
         <option value="$PROJECT_DIR$/Repository.py" />
         <option value="$PROJECT_DIR$/Tests/RepositoryTests.py" />
-        <option value="$PROJECT_DIR$/QueryGenerator.py" />
         <option value="$PROJECT_DIR$/Tests/QueryGeneratorTests.py" />
+        <option value="$PROJECT_DIR$/QueryGenerator.py" />
       </list>
     </option>
   </component>
@@ -476,35 +476,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Nosetests_in_FQL - 2016.02.25 at 18h 33m 35s.xml">
-      <configuration name="Nosetests in FQL" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_in_QueryGeneratorTests - 2016.02.25 at 18h 40m 15s.xml">
-      <configuration name="Nosetests in QueryGeneratorTests" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_in_QueryGeneratorTests - 2016.02.25 at 18h 41m 55s.xml">
-      <configuration name="Nosetests in QueryGeneratorTests" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_in_QueryGeneratorTests - 2016.02.25 at 18h 42m 08s.xml">
-      <configuration name="Nosetests in QueryGeneratorTests" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_in_QueryGeneratorTests - 2016.02.25 at 18h 42m 39s.xml">
-      <configuration name="Nosetests in QueryGeneratorTests" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_in_QueryGeneratorTests - 2016.02.25 at 18h 42m 58s.xml">
-      <configuration name="Nosetests in QueryGeneratorTests" configurationId="tests" />
-    </history-entry>
     <history-entry file="Nosetests_in_QueryGeneratorTests - 2016.02.25 at 18h 43m 13s.xml">
       <configuration name="Nosetests in QueryGeneratorTests" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_RepositoryTests - 2016.02.25 at 18h 30m 29s.xml">
-      <configuration name="Nosetests in RepositoryTests" configurationId="tests" />
+    <history-entry file="Nosetests_in_QueryGeneratorTests - 2016.02.25 at 18h 44m 26s.xml">
+      <configuration name="Nosetests in QueryGeneratorTests" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_RepositoryTests - 2016.02.25 at 18h 31m 57s.xml">
-      <configuration name="Nosetests in RepositoryTests" configurationId="tests" />
+    <history-entry file="Nosetests_in_QueryGeneratorTests - 2016.02.25 at 18h 46m 53s.xml">
+      <configuration name="Nosetests in QueryGeneratorTests" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_RepositoryTests - 2016.02.25 at 18h 32m 56s.xml">
-      <configuration name="Nosetests in RepositoryTests" configurationId="tests" />
+    <history-entry file="Nosetests_in_QueryGeneratorTests - 2016.02.25 at 18h 47m 46s.xml">
+      <configuration name="Nosetests in QueryGeneratorTests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_QueryGeneratorTests - 2016.02.25 at 18h 48m 30s.xml">
+      <configuration name="Nosetests in QueryGeneratorTests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_QueryGeneratorTests - 2016.02.25 at 18h 49m 23s.xml">
+      <configuration name="Nosetests in QueryGeneratorTests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_QueryGeneratorTests - 2016.02.25 at 18h 50m 12s.xml">
+      <configuration name="Nosetests in QueryGeneratorTests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_QueryGeneratorTests - 2016.02.25 at 18h 50m 43s.xml">
+      <configuration name="Nosetests in QueryGeneratorTests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_QueryGeneratorTests - 2016.02.25 at 18h 51m 06s.xml">
+      <configuration name="Nosetests in QueryGeneratorTests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_QueryGeneratorTests - 2016.02.25 at 18h 51m 55s.xml">
+      <configuration name="Nosetests in QueryGeneratorTests" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -666,21 +666,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/QueryGeneratorTests.py">
+    <entry file="file://$PROJECT_DIR$/QueryGenerator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
+          <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/QueryGenerator.py">
+    <entry file="file://$PROJECT_DIR$/Tests/QueryGeneratorTests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14712824">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-          <folding />
+        <state vertical-scroll-proportion="0.45476004">
+          <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

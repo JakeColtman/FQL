@@ -7,8 +7,13 @@ class QueryGenerator:
 
     def _get_relevant_queries_from_repo(self, queries):
         output = []
-        for query in queries:
-            output.append(self.repo.retrieve_query(query.name))
+        newDeps = [x.name for x in queries]
+        while len(newDeps) != 0:
+            depName = newDeps.pop(0)
+            if depName in [x.name for x in output]: continue
+            dependentQuery = self.repo.retrieve_query(depName)
+            output.append(dependentQuery)
+            newDeps += dependentQuery.dependencies
         print(output)
         return output
 

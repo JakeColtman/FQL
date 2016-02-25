@@ -16,5 +16,27 @@ class QueryGeneratorTests(unittest.TestCase):
         self.assertTrue(q1 in output)
         self.assertTrue(q2 in output)
 
+    def test_query_generator_finds_second_level_queries(self):
+        q1 = Query("1", "", [])
+        q2 = Query("2", "", ["3"])
+        q3 = Query("3", "", [])
+        repo = Repository()
+        repo.add_queries([q1,q2,q3])
+        qg = QueryGenerator(repo)
+        output = qg._get_relevant_queries_from_repo([q1,q2])
+        self.assertTrue(q1 in output)
+        self.assertTrue(q2 in output)
+        self.assertTrue(q3 in output)
+
+    def test_query_generator_wont_double_add(self):
+        q1 = Query("1", "", ["3"])
+        q2 = Query("2", "", ["3"])
+        q3 = Query("3", "", [])
+        repo = Repository()
+        repo.add_queries([q1,q2,q3])
+        qg = QueryGenerator(repo)
+        output = qg._get_relevant_queries_from_repo([q1,q2])
+        self.assertEqual(len(output) , 3)
+
 if __name__ == '__main__':
     unittest.main()
