@@ -49,9 +49,10 @@ class Parser:
         return queryList
 
 
-    def parse(self, query):
+    def parse(self, query, name = None):
 
         query = query.replace("--", " ")
+        if name is None: name = "final_query"
 
         if ";" in query or "with" not in query:
             return [Query("test", x.lower(), []) for x in query.split(";")]
@@ -63,7 +64,7 @@ class Parser:
         while wordList.peek() is not False:
             nextWord = wordList.next_word()
             if nextWord == "select":
-                output.append(Query("final query", " ".join(["select"] + wordList.wordList), []))
+                output.append(Query(name, " ".join(["select"] + wordList.wordList), []))
                 break
             elif nextWord in ["as"]:
                 output.append(Query(standingName, " ".join(self._split_out_sub_clause(wordList)), []))
