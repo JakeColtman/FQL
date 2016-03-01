@@ -76,4 +76,4 @@ class Parser:
 
 
 p = Parser()
-p.parse("SELECT 1 ; Select 2")
+print(p.parse("SELECT 1 ; Select 2"))

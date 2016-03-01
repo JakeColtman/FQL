@@ -13,6 +13,7 @@ class QueryGenerator:
             depName = newDeps.pop(0)
             if depName in [x.name for x in output]: continue
             dependentQuery = self.repo.retrieve_query(depName)
+            print(dependentQuery)
             output.append(dependentQuery)
             newDeps += dependentQuery.dependencies
         return output

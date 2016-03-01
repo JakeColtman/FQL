@@ -1,4 +1,4 @@
-import json
+import pickle
 import os.path
 
 class Repository:
@@ -6,8 +6,8 @@ class Repository:
     def __init__(self, file_name):
         self.file_name = file_name
         if os.path.isfile(self.file_name):
-            with open(self.file_name) as data_file:
-                self.queries = json.load(data_file)
+            with open(self.file_name, "rb") as data_file:
+                self.queries = pickle.load(data_file)
         else:
             self.queries = {}
 
@@ -22,5 +22,5 @@ class Repository:
         return self.queries[name]
 
     def save(self):
-        with open(self.file_name, "w") as data_file:
-            json.dump(self.queries, data_file)
+        with open(self.file_name, "wb") as data_file:
+            pickle.dump(self.queries, data_file)
