@@ -28,3 +28,11 @@ class QueryGenerator:
         output = output[:-1]
         output += order_output[-1].query
         return output
+
+class TestQueryGenerator:
+    def __init__(self, cte_lookup: dict, final_query: str):
+        self.cte_lookup = cte_lookup
+        self.final_query = final_query.lower()
+
+    def generate(self):
+        return self.final_query
