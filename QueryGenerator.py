@@ -10,18 +10,20 @@ class QueryGenerator:
         output = []
         newDeps = query_names
         while len(newDeps) != 0:
-            depName = newDeps.pop(0)
-            if depName in [x.name for x in output]: continue
-            dependentQuery = self.repo.retrieve_query(depName)
-            print(dependentQuery)
-            output.append(dependentQuery)
-            newDeps += dependentQuery.dependencies
-        return output
+            dependentQueries = [self.repo.retrieve_query(x) for x in newDeps]
+            output.extend(dependentQueries)
+            newDepsNonFlat = [x.dependencies for x in dependentQueries]
+            newDeps = [item for sublist in newDepsNonFlat for item in sublist]
+        final_output = []
+        for queryName in output[::-1]:
+            if queryName not in final_output:
+                final_output.append(queryName)
+        return final_output
 
     def generate_query(self, query_names):
         order_output = self._get_relevant_queries_from_repo(query_names)
         if len(order_output) == 1: return order_output[0].query
-        order_output = list(reversed(order_output))
+        #order_output = list(reversed(order_output))
         output = "with "
         for item in order_output[:-1]:
             output += "{0} as ({1}),".format(item.name, item.query)

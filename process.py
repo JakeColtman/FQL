@@ -18,7 +18,18 @@ def process(repo, parser, queryList):
 with open("connection_string.txt", "r") as file_open:
     connString = file_open.read()
 
-conn = RedshiftConnection(connString)
-test = Test("select 1", {}, "custom.temp_test")
-tester = RepositoryTester(conn, [test])
-print(tester.run_all_tests())
+#conn = RedshiftConnection(connString)
+#test = Test("select 1", {}, "custom.temp_test")
+#tester = RepositoryTester(conn, [test])
+#print(tester.run_all_tests())
+
+with open("bigQuery.sql", "r") as file_open:
+    query = file_open.read()
+parser = Parser()
+output = parser.parse(query, "final_query")
+repo = Repository("dummy.txt")
+repo.add_queries(output)
+qg = QueryGenerator(repo)
+print(qg.generate_query(["final_query"]))
+visualize_repository(repo)
+

@@ -74,7 +74,3 @@ class Parser:
         output = self._update_dependencies(output)
 
         return output
-
-
-p = Parser()
-print(p.parse("SELECT 1 ; Select 2"))

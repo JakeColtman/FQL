@@ -47,7 +47,7 @@ class ParserTests(unittest.TestCase):
         output = parser.parse("with test_cte as (SELECT 1),test_cte2 as (SELECT 3 )  Select 2")
         self.assertEqual(output[0].name, "test_cte".lower())
         self.assertEqual(output[1].name, "test_cte2".lower())
-        self.assertEqual(output[2].name, "final query".lower())
+        self.assertEqual(output[2].name, "final_query".lower())
 
     def test_dependency_finder(self):
         parser = Parser()

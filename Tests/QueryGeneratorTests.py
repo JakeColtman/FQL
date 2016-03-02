@@ -76,5 +76,26 @@ class QueryGeneratorTests(unittest.TestCase):
         self.assertTrue("Q2" in output)
         self.assertTrue("Q3" in output)
 
+    def test_qg_does_depth_first(self):
+        q1 = Query("Q1", "select 1", [])
+        q2 = Query("Q2", "select 2", ["Q1"])
+        q3 = Query("Q3", "select 3", ["Q2", "Q1"])
+        repo = Repository("dummy.json")
+        repo.add_queries([q1,q2,q3])
+        qg = QueryGenerator(repo)
+        output = qg.generate_query(["Q3"])
+        print(output)
+        self.assertTrue(output.lower().index("q1") < output.lower().index("q2"))
+
+        q1 = Query("Q1", "select 1", [])
+        q2 = Query("Q2", "select 2", ["Q1"])
+        q3 = Query("Q3", "select 3", ["Q1", "Q2"])
+        repo = Repository("dummy.json")
+        repo.add_queries([q1,q2,q3])
+        qg = QueryGenerator(repo)
+        output = qg.generate_query(["Q3"])
+        print(output)
+        self.assertTrue(output.lower().index("q1") < output.lower().index("q2"))
+
 if __name__ == '__main__':
     unittest.main()
