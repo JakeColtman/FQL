@@ -50,3 +50,4 @@ repo.pickle
 connection_string.txt
 *.txt
 *.pyc
+*.sql
