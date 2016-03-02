@@ -47,3 +47,5 @@ Temporary Items
 .apdisk
 repo.json
 repo.pickle
+connection_string.txt
+*.txt
