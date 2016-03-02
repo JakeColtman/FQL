@@ -35,4 +35,12 @@ class TestQueryGenerator:
         self.final_query = final_query.lower()
 
     def generate(self):
-        return self.final_query
+        if self.cte_lookup == {}: return self.final_query
+
+        output = "with "
+        for cte in self.cte_lookup:
+            output += "{0} as ( select * from {1} ),".format(cte.lower(), self.cte_lookup[cte].lower())
+        output = output[:-1]
+        output += " " + self.final_query
+        print( output)
+        return output
