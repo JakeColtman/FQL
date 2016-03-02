@@ -3,12 +3,12 @@ from Connections.Redshift import RedshiftConnection
 from QueryGenerator import TestQueryGenerator
 Test = namedtuple("QueryTester", ["query", "tableLookup", "outputTable"])
 
-class Tester:
+class QueryTester:
 
     def __init__(self, connection : RedshiftConnection):
         self.connection = connection
 
-    def run_test(self, test : Test, verbose = True):
+    def run_test(self, test : Test, verbose = False):
         query_generator = TestQueryGenerator(test.tableLookup, test.query)
         query = query_generator.generate()
         results_query = self.connection.run_query(query)

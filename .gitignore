@@ -49,3 +49,4 @@ repo.json
 repo.pickle
 connection_string.txt
 *.txt
+*.pyc
