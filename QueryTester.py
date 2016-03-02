@@ -1,12 +1,21 @@
 from collections import namedtuple
-
-Test = namedtuple("QueryTester", ["queryName", "tableLookup", "outputTable"])
+from Connections.Redshift import RedshiftConnection
+from QueryGenerator import TestQueryGenerator
+Test = namedtuple("QueryTester", ["query", "tableLookup", "outputTable"])
 
 class Tester:
 
-    def __init__(self, connection, query_generator):
+    def __init__(self, connection : RedshiftConnection):
         self.connection = connection
-        self.query_generator = query_generator
 
     def run_test(self, test : Test, verbose = True):
-        return False
+        query_generator = TestQueryGenerator(test.tableLookup, test.query)
+        query = query_generator.generate()
+        results_query = self.connection.run_query(query)
+
+        results_outputtable = self.connection.run_query("select * from {0}".format(test.outputTable))
+        success = results_query == results_outputtable
+        if verbose:
+            return [success, results_query, results_outputtable]
+        else:
+            return success
