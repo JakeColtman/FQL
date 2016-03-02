@@ -7,6 +7,9 @@ class RedshiftConnection:
 
     def run_query(self, query):
         conn = psycopg2.connect(self.conn_string)
-        result = conn.cursor().execute(query)
+        cur = conn.cursor()
+        cur.execute(query)
+        result = cur.fetchall()
+        cur.close()
         conn.close()
         return result
