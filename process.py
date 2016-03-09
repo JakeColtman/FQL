@@ -23,13 +23,25 @@ with open("connection_string.txt", "r") as file_open:
 #tester = RepositoryTester(conn, [test])
 #print(tester.run_all_tests())
 
-with open("bigQuery.sql", "r") as file_open:
-    query = file_open.read()
-parser = Parser()
-output = parser.parse(query, "final_query")
-repo = Repository("dummy.txt")
-repo.add_queries(output)
-qg = QueryGenerator(repo)
-print(qg.generate_query(["final_query"]))
-visualize_repository(repo)
+# with open("bigQuery.sql", "r") as file_open:
+#     query = file_open.read()
+# parser = Parser()
+# output = parser.parse(query, "final_query")
+# repo = Repository("dummy.txt")
+# repo.add_queries(output)
+# qg = QueryGenerator(repo)
+# print(qg.generate_query(["final_query"]))
+# visualize_repository(repo)
 
+p = Parser()
+print(p.parse_details("select "
+                      "column1 "
+                      "from testTable "
+                      "WHERE test"))
+
+import sqlparse
+
+p = sqlparse.parse("select column from testTable join testTable2 on testTable.test = testTable2.test")
+print(p[0].tokens)
+print(type(p[0].tokens[-1]) is sqlparse.sql.Where)
+print(p[0].tokens[-1].value)
