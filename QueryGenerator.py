@@ -32,16 +32,17 @@ class QueryGenerator:
         return output
 
 class TestQueryGenerator:
-    def __init__(self, cte_lookup: dict, final_query: str):
+    def __init__(self, id, cte_lookup: dict, final_query: str):
         self.cte_lookup = cte_lookup
         self.final_query = final_query.lower()
+        self.id = id
 
     def generate(self):
         if self.cte_lookup == {}: return self.final_query
 
         output = "with "
         for cte in self.cte_lookup:
-            output += "{0} as ( select * from {1} ),".format(cte.lower(), self.cte_lookup[cte].lower())
+            output += "{0} as ( select * from {1} where test_id = {2} ),".format(cte.lower(), self.cte_lookup[cte].lower(), str(self.id))
         output = output[:-1]
         output += " " + self.final_query
         print( output)
