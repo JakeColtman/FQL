@@ -34,14 +34,21 @@ with open("connection_string.txt", "r") as file_open:
 # visualize_repository(repo)
 
 p = Parser()
-print(p.parse_details("select "
+print(p.split_ctes("with test as (select 1), "
+                   "test2 as (select 4) "
+                      "select "
                       "column1 "
                       "from testTable "
                       "WHERE test"))
 
-import sqlparse
-
-p = sqlparse.parse("select column from testTable join testTable2 on testTable.test = testTable2.test")
-print(p[0].tokens)
-print(type(p[0].tokens[-1]) is sqlparse.sql.Where)
-print(p[0].tokens[-1].value)
+# import sqlparse
+#
+# p = sqlparse.parse("with test as (select 1), "
+#                    "test2 as (select 4) "
+#                       "select "
+#                       "column1 "
+#                       "from testTable "
+#                       "WHERE test")
+# print(p[0].tokens)
+# for item in p[0].tokens[2].get_identifiers():
+#     print(item.get_name())

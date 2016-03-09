@@ -77,6 +77,19 @@ class Parser:
 
         return output
 
+    def split_ctes(self, query):
+        parsed = sqlparse.parse(query)
+        if not any([x.ttype is sqlparse.tokens.Keyword and "with" in x.value for x in parsed[0].tokens]):
+            return [query]
+        ii = 0
+        while type(parsed[0].tokens[ii]) != sqlparse.sql.IdentifierList:
+            ii += 1
+        cteList = parsed[0].tokens[ii].get_identifiers()
+
+        for cte in cteList:
+            name = cte.get_name()
+            query = cte.value.replace(name, "")
+
     def parse_details(self, query, name = None):
 
         output = {"columns": [], "tables": [], "where": ""}
