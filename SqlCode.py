@@ -35,7 +35,7 @@ def parse_query_to_detailed(query: Query):
     state = "start"
     textQuery = query.query
 
-    query = query._replace(query = {"columns": [], "tables": [], "where": ""})
+    query = query._replace(query = {"columns": [], "tables": [], "where": "", "string":textQuery})
 
     parsed = sqlparse.parse(textQuery)
     for token in parsed[0].tokens:
