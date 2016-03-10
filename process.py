@@ -7,6 +7,9 @@ from RepositoryTester import RepositoryTester
 from QueryTester import Test
 from SqlCode import split_out_ctes, parse_query_to_detailed, identify_dependencies_in_query_list
 from RepositoryTester import setup_repository_test_suite
+from RepositoryTester import RepositoryTest
+
+
 def process(repo, parser, queryList):
     for query in queryList:
         repo.add_queries(parser.parse(query))
@@ -34,7 +37,7 @@ sqlCode = """ with companies as
                 (
                     select account_id, name
                     from
-                    accounts
+                    testtable
                 )
                 select name
                 from
@@ -45,8 +48,10 @@ sqlCode = """ with companies as
 textQueries = split_out_ctes(sqlCode, "final_query")
 print(textQueries)
 parsedQueries = [parse_query_to_detailed(x) for x in textQueries]
+parsedQueries[-1].dependencies.append("accounts")
 print(parsedQueries)
-repo = Repository("repo3.pickle")
+repo = Repository("repo5.pickle")
 repo.add_queries(parsedQueries)
 
-setup_repository_test_suite(conn, repo)
+rtest = RepositoryTest(conn, repo, "tests", 1)
+rtest.find_biggest_testable_node()
