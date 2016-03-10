@@ -18,6 +18,7 @@ class QueryGenerator:
         for queryName in output[::-1]:
             if queryName not in final_output:
                 final_output.append(queryName)
+        print(final_output)
         return final_output
 
     def generate_query(self, query_names):

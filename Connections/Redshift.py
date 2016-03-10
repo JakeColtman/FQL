@@ -9,7 +9,11 @@ class RedshiftConnection:
         conn = psycopg2.connect(self.conn_string)
         cur = conn.cursor()
         cur.execute(query)
-        result = cur.fetchall()
+        try:
+            result = cur.fetchall()
+        except:
+            result = []
         cur.close()
+        conn.commit()
         conn.close()
         return result

@@ -3,7 +3,7 @@ import os.path
 
 class Repository:
 
-    def __init__(self, file_name):
+    def __init__(self, file_name = ""):
         self.file_name = file_name
         if os.path.isfile(self.file_name):
             with open(self.file_name, "rb") as data_file:
@@ -24,3 +24,6 @@ class Repository:
     def save(self):
         with open(self.file_name, "wb") as data_file:
             pickle.dump(self.queries, data_file)
+
+    def retrieve_all_queries(self):
+        return [self.queries[x] for x in self.queries]

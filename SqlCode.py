@@ -6,7 +6,7 @@ def split_out_ctes(code:str, query_name = None):
 
     if query_name is None: query_name = "final_query"
     parsed = sqlparse.parse(code)
-
+    print(parsed[0].tokens)
     #If there are no ctes, returns a list of just the code
     if not any([x.ttype is sqlparse.tokens.Keyword and "with" in x.value for x in parsed[0].tokens]):
         return [code]
