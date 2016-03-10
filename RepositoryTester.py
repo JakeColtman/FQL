@@ -6,6 +6,7 @@ from Connections.Redshift import RedshiftConnection
 def setup_repository_test_suite(connection: RedshiftConnection, repo: Repository, schema = "tests"):
     queries = repo.retrieve_all_queries()
 
+    dropQuery = "DROP TABLE {0}"
     rawQuery = "CREATE TABLE {0} ({1})"
     rawColumn = "{0} varchar(255)"
 
@@ -17,6 +18,7 @@ def setup_repository_test_suite(connection: RedshiftConnection, repo: Repository
             if column == "\n": continue
             columns += rawColumn.format(column) + ","
         columns = columns[:-1]
+        connection.run_query(dropQuery.format(schema + "." + query.name))
         connection.run_query(rawQuery.format(schema + "." + query.name, columns))
         print(rawQuery.format(schema + "." + query.name, columns))
 
