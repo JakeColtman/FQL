@@ -99,7 +99,9 @@ class RepositoryTest:
 
         print(test)
 
-
+    def generate_simulated_query(self, node, simulated_nodes):
+        output_node = ""
+        pass
 
 
 

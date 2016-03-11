@@ -6,7 +6,6 @@ def split_out_ctes(code:str, query_name = None):
 
     if query_name is None: query_name = "final_query"
     parsed = sqlparse.parse(code)
-    print(parsed[0].tokens)
     #If there are no ctes, returns a list of just the code
     if not any([x.ttype is sqlparse.tokens.Keyword and "with" in x.value for x in parsed[0].tokens]):
         return [code]
@@ -20,7 +19,7 @@ def split_out_ctes(code:str, query_name = None):
 
     for cte in cteList:
         name = cte.value
-        query = str(cte).replace(cte.value, "").replace("as", "").strip()[1:-1]
+        query = str(cte).replace(cte.value + " as", "").strip()[1:-1]
         output.append(Query(name, query, []))
 
     final_query_text = "".join([str(x) for x in parsed[0].tokens[ii + 1:]])
@@ -38,7 +37,9 @@ def parse_query_to_detailed(query: Query):
     query = query._replace(query = {"columns": [], "tables": [], "where": "", "string":textQuery})
 
     parsed = sqlparse.parse(textQuery)
+    print(parsed[0].tokens)
     for token in parsed[0].tokens:
+        print(token)
         if token.ttype is sqlparse.tokens.Whitespace: continue
 
         if token.ttype is sqlparse.tokens.DML:
@@ -46,7 +47,8 @@ def parse_query_to_detailed(query: Query):
             continue
 
         if state == "select" and token.ttype is not sqlparse.tokens.Punctuation:
-            if token.value == "from":
+            if token.value.lower() == "from":
+                print("from")
                 state = "from"
                 continue
 
@@ -59,10 +61,15 @@ def parse_query_to_detailed(query: Query):
                     else:
                         query.query["columns"].append(item.value)
                 continue
-            query.query["columns"].append(str(token.value))
+
+            if token.ttype is not sqlparse.tokens.Punctuation and token.ttype is not sqlparse.tokens.Whitespace and str(token.value) != "\n":
+                query.query["columns"].append(str(token.value))
 
         if state == "from":
 
+            if token.value.lower() == "group":
+                state = "group"
+                continue
             if type(token) is sqlparse.sql.Where:
                 query.query["where"] = token.value.replace("where", "").strip()
                 state = "where"

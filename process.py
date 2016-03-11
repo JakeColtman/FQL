@@ -1,7 +1,7 @@
 from Repository import Repository
 from Parser import Parser
 from Visualize import visualize, visualize_repository
-from QueryGenerator import QueryGenerator
+from QueryGenerator import QueryGenerator, TestQueryGenerator
 from Connections.Redshift import RedshiftConnection
 from RepositoryTester import RepositoryTester
 from QueryTester import Test
@@ -28,30 +28,34 @@ conn = RedshiftConnection(connString)
 #print(tester.run_all_tests())
 
 
-sqlCode = """ with companies as
-                (
-                    select company_id, name
-                    from companies
-                ),
-                accounts as
-                (
-                    select account_id, name
-                    from
-                    testtable
-                )
-                select name
-                from
-                accounts
-        """
-
-
-textQueries = split_out_ctes(sqlCode, "final_query")
-print(textQueries)
-parsedQueries = [parse_query_to_detailed(x) for x in textQueries]
-parsedQueries[-1].dependencies.append("accounts")
-print(parsedQueries)
-repo = Repository("repo5.pickle")
-repo.add_queries(parsedQueries)
-
-rtest = RepositoryTest(conn, repo, "tests", 1)
-rtest.find_biggest_testable_node()
+# sqlCode = """ with companies as
+#                 (
+#                     select company_id, name
+#                     from companies
+#                 ),
+#                 accounts as
+#                 (
+#                     select account_id, name
+#                     from
+#                     testtable
+#                 )
+#                 select name
+#                 from
+#                 accounts
+#         """
+#
+#
+# textQueries = split_out_ctes(sqlCode, "final_query")
+# print(textQueries)
+# parsedQueries = [parse_query_to_detailed(x) for x in textQueries]
+# parsedQueries[-1].dependencies.append("accounts")
+# print(parsedQueries)
+# repo = Repository("repo5.pickle")
+# repo.add_queries(parsedQueries)
+#
+# rtest = RepositoryTest(conn, repo, "tests", 1)
+# rtest.find_biggest_testable_node()
+repo = Repository("buyers2.pickle")
+tqg = TestQueryGenerator(repo, "auction_to_furthest_away_debtor_company", ["companyid_to_country_and_region", "invoices"], 1)
+print(tqg.generate())
+#visualize_repository(repo)

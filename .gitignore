@@ -51,3 +51,4 @@ connection_string.txt
 *.txt
 *.pyc
 *.sql
+*.pickle
