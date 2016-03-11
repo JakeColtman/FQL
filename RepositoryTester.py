@@ -1,5 +1,4 @@
-from QueryTester import QueryTester
-from QueryTester import Test
+from QueryGenerator import TestQueryGenerator
 from Repository import Repository
 from Connections.Redshift import RedshiftConnection
 
@@ -28,14 +27,24 @@ def setup_repository_test_suite(connection: RedshiftConnection, repo: Repository
 
 class RepositoryTester:
 
-    def __init__(self, connection: RedshiftConnection, repo: Repository, create = False):
+    def __init__(self, connection: RedshiftConnection, repo: Repository, schema = "tests", create = False):
         self.repo = repo
+        self.schema = schema
         self.connection = connection
         if create: setup_repository_test_suite(connection, repo)
 
     def run_all_tests(self):
-        query_tester = QueryTester(self.connection)
-        return list(map(query_tester.run_test, self.tests))
+        test_ids = self.connection.run_query("select distinct test_id from {0}.test_details".format(self.schema))
+        test_ids = [x[0] for x in test_ids]
+
+        failed_tests = []
+
+        tests = [RepositoryTest(self.connection, self.repo, self.schema, x) for x in test_ids]
+        for test in tests:
+            if not test.run():
+                failed_tests.append(test.id)
+
+        return failed_tests
 
 class RepositoryTest:
 
@@ -46,7 +55,8 @@ class RepositoryTest:
         allTables = self.conn.run_query("""
             SELECT distinct table_name
             FROM information_schema.tables
-            where table_schema = '{0}'""".format(self.schema)
+            where table_schema = '{0}'
+            and table_name != 'test_details'""".format(self.schema)
         )
         allTables = [x[0] for x in allTables]
 
@@ -83,12 +93,11 @@ class RepositoryTest:
 
     def find_biggest_testable_node(self):
         affectedTables = self._identify_affected_tables()
-
+        print(affectedTables)
         currentBiggest = 0
         test = None
 
         for table in affectedTables:
-            if table != "final_query": continue
             dependencies = self.repo.retrieve_query(table)
             if dependencies == []: continue
             testable, simulatedNodes = self.is_node_testable(table, affectedTables)
@@ -97,11 +106,28 @@ class RepositoryTest:
                 currentBiggest = len(simulatedNodes)
                 test = [table, simulatedNodes]
 
-        print(test)
+        return test
 
-    def generate_simulated_query(self, node, simulated_nodes):
-        output_node = ""
-        pass
+    def run(self):
+        node_name, simulated_nodes = self.find_biggest_testable_node()
 
+        testQueryGen = TestQueryGenerator(self.repo, node_name, simulated_nodes, self.id)
+        simulatedQuery = testQueryGen.generate()
+        simulatedOutput = self.conn.run_query(simulatedQuery)
 
+        specifiedQuery = "select * from {0}.{1} where test_id = {2}".format(self.schema, node_name, self.id)
+        specifiedOutput = self.conn.run_query(specifiedQuery)
+        specifiedOutput = [x[:-1] for x in specifiedOutput]
 
+        print(specifiedOutput)
+        print(simulatedOutput)
+
+        for item in simulatedOutput:
+            if item not in specifiedOutput:
+                return False
+
+        for item in specifiedOutput:
+            if item not in simulatedOutput:
+                return False
+
+        return True
