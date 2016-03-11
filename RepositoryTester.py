@@ -121,13 +121,8 @@ class RepositoryTest:
 
         print(specifiedOutput)
         print(simulatedOutput)
-
+        if len(simulatedOutput) != len(specifiedOutput): return False
         for item in simulatedOutput:
             if item not in specifiedOutput:
                 return False
-
-        for item in specifiedOutput:
-            if item not in simulatedOutput:
-                return False
-
         return True
