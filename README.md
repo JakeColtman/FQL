@@ -20,4 +20,8 @@ A second claim is that sql code should be structured as closely as possible to b
 ## Implementing the philosophy:
 
 If we accept this philosophy, how should we implement it?  The main tool for doing this is the common table expression (CTE).  CTEs 
-are temporary tables that are created on the fly, and they have strong similarities to functions in functional languages.  Like functions, each CTE has a type definition.  The inputs to the CTE are the CTEs and tables that it depends on and the output is a set of tuples.  Also like functions, CTEs can be composed together to prodcue arbitrarily complex logic.  
+are temporary tables that are created on the fly, and they have strong similarities to functions in functional languages.  Like functions, each CTE has a type definition.  The inputs to the CTE are the CTEs and tables that it depends on and the output is a set of tuples.  Also like functions, CTEs can be composed together to prodcue arbitrarily complex logic.
+
+If we write our sql so that each major transformation takes place in a single CTE, we can gain the same advantages that we get from breaking up a program into functions.  We can reuse the same transformation in different places and across different sql queries, we only have to change the logic in one place rather than many different places, and we can test the particular piece of logic in isolation to the rest of the code.
+
+##FQL Tooling
