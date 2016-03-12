@@ -1,14 +1,9 @@
-from Repository import Repository
-from Visualize import visualize, visualize_repository
-from QueryGenerator import QueryGenerator, TestQueryGenerator
+from Connections.LookerFile import LookerFile
 from Connections.Redshift import RedshiftConnection
-from RepositoryTester import RepositoryTester
-from SqlCode import SqlCode
+from Repository import Repository
 from RepositorySearcher import RepositorySearcher
-from RepositoryTester import setup_repository_test_suite
-from RepositoryTester import RepositoryTest
-from ExportConnections.SqlFile import SqlFile
-from ExportConnections.LookerFile import LookerFile
+from SqlCode import SqlCode
+
 
 def process(repo, parser, queryList):
     for query in queryList:
