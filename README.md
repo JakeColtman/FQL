@@ -77,7 +77,7 @@ Once you have the CTE that you are looking for, you can turn it into a runnable 
 
 ```python 
 repo = Repository("repo.pickle")
-qg = QueryGenerator(self.repo)
+qg = QueryGenerator(repo)
 sql = qg.generate_query(query.name)
 ```
 
