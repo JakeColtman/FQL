@@ -89,11 +89,23 @@ FQL provides a great setup to test your CTEs.  To keep the tests as closely inli
 
 The first time you use the testing, FQL provides a helper function setup_repository_test_suite() to create the schema and all of the necessary tables.  You will need to rerun this if you update the CTEs.
 
+To run tests use the code below.  You first load a repository and create a connection to your database.  Then specify which test ids you wish to run.  These correspond to the test_id columns in the tests schema tables.  Finally, you can either run all tests or limit to specific ids.
+
 ```python
 repo = Repository("repo6.pickle")
 test = RepositoryTest(conn, repo, "tests", 1)
-tester = RepositoryTester(conn, [test])
+#run one test
+print(test.run())
+#Run tests 1 to 10
+tests = [RepositoryTest(conn, repo, "tests", x + 1) for x in range(10)]
+tester = RepositoryTester(conn, [tests])
 print(tester.run_all_tests())
 ```
 
 The final line will print a list of all test ids that failed (i.e. where the expected values inserted into the tests schema tables didn't equal the output of the run CTE).
+
+####Intergrating:
+
+FQL aims to integrate into your current workflow to make life as easy as possible.  At the moment, it can be hooked to export data to the file system and into valid lookML files.  
+
+This is part of the project which will expand the most quickly to enable FQL to coordinate and manage lookML projects
