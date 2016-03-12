@@ -73,4 +73,18 @@ searcher = RepositorySearcher(repo)
 found = searcher.get_best_guesses("accounts")
 ```
 
+Once you have the CTE that you are looking for, you can turn it into a runnable piece of SQL using the QueryGenerator class:
 
+```python 
+repo = Repository("repo.pickle")
+qg = QueryGenerator(self.repo)
+sql = qg.generate_query(query.name)
+```
+
+This will search through the repository for the query, find all the other ctes which the query depends on and produces a sql query string needed to run the CTE.
+
+####Testing
+
+FQL provides a great setup to test your CTEs.  To keep the tests as closely inline with the data as possible, FQL does all of the testing through the same DB that your data sits on.  It creates a new schema (default name tests) with one table for each of your CTEs.  To add a tests, simply insert the test input data into the relevant input CTEs and the expected output values into the appropriate tables.  FQL will scan through the tables for each test and identify exactly which CTEs can be tested using the information you inserted.
+
+The first time you use the testing, FQL provides a helper function setup_repository_test_suite to create the schema and all of the necessary tables.  You will need to rerun this if you update the CTEs.
