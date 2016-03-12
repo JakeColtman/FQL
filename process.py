@@ -7,7 +7,7 @@ from SqlCode import SqlCode
 from RepositorySearcher import RepositorySearcher
 from RepositoryTester import setup_repository_test_suite
 from RepositoryTester import RepositoryTest
-
+from ExportConnections.SqlFile import SqlFile
 
 def process(repo, parser, queryList):
     for query in queryList:
@@ -46,11 +46,12 @@ sqlCode = """ with companies as
         """
 code = SqlCode(sqlCode)
 repo = Repository("repo6.pickle")
+file = SqlFile("testExport.sql")
 repo.add_queries(code.queries)
 searcher = RepositorySearcher(repo)
 print(searcher.get_best_guesses("accounts"))
 qg = QueryGenerator(repo)
-print(qg.generate_query("accounts"))
+file.export(qg.generate_query("accounts"))
 
 # with open("bigQuery.sql", "r") as file_open:
 #     sqlCode = file_open.read()
