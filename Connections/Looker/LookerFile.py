@@ -8,17 +8,11 @@ class LookerFile:
     def __init__(self, repo: Repository, file_name: str):
         self.repo, self.file_name = repo, file_name
 
-        self.base = """
-        - view: {0}
-              derived_table:
-                 sql_trigger_value: SELECT * FROM looker_scratch.pdt_trigger_values where view_name = '{0}'
-                 sortkeys: [{1}]
-                 sql: |
-                    {2}
+        with open(r"Connections/Looker/base_view.txt", "r") as file_open:
+            self.base = file_open.read()
 
-              fields:
-                 {3}
-        """
+        with open(r"Connections/Looker/base_view_field.txt", "r") as file_open:
+            self.base_field = file_open.read()
 
     def export(self, query: Query):
         qg = QueryGenerator(self.repo)
@@ -26,7 +20,7 @@ class LookerFile:
 
         fields = self.format_fields(query.columns)
 
-        output_text = self.base.format(query.name, query.columns[0].name, query.text, fields)
+        output_text = self.base.format(query.name, query.columns[0].name, output_sql_text, fields)
 
         with open(self.file_name, "w") as file_open:
             file_open.write(output_text)
@@ -35,14 +29,7 @@ class LookerFile:
         output = ""
         for column in columns:
             output += self.format_field(column)
-
         return output
 
     def format_field(self, column: Column):
-        base = """
-            - dimension: {0}
-              type: string
-              sql: ${{TABLE}}.{0}
-            """
-
-        return base.format(column.name)
+        return self.base_field.format(column.name)

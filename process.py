@@ -1,5 +1,5 @@
-from Connections.LookerFile import LookerFile
-from Connections.Redshift import RedshiftConnection
+from Connections.Looker.LookerFile import LookerFile
+from Connections.SQL.Redshift import RedshiftConnection
 from Repository import Repository
 from RepositorySearcher import RepositorySearcher
 from SqlCode import SqlCode
@@ -46,16 +46,5 @@ file = LookerFile(repo, "testExport.sql")
 repo.add_queries(code.queries)
 searcher = RepositorySearcher(repo)
 found = searcher.get_best_guesses("final_query")
+print(repo.retrieve_query_with_dependencies(found[0].name))
 file.export(found[0])
-
-# with open("bigQuery.sql", "r") as file_open:
-#     sqlCode = file_open.read()
-# code = SqlCode(sqlCode)
-# for query in code.queries:
-#     print(query.name)
-#     print(query.dependencies)
-#     print(query.tables)
-# repo = Repository("repo6.pickle")
-# repo.add_queries(code.queries)
-
-# visualize(repo)
