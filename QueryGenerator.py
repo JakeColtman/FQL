@@ -1,5 +1,5 @@
 from Repository import Repository
-from Query import Query
+from DomainModel.Query import Query
 
 class QueryGenerator:
 

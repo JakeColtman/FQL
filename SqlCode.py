@@ -4,7 +4,7 @@ from DomainModel.Query import Query
 
 class SqlCode:
 
-    def __init__(self, text:str, final_query_name: str):
+    def __init__(self, text:str, final_query_name: str = None):
         if final_query_name is None: final_query_name = "final_query"
         self.text, self.query_name = text, final_query_name
         self.queries = []
@@ -35,5 +35,5 @@ class SqlCode:
 
         for ii, query in enumerate(self.queries[::-1]):
             for possibleDep in self.queries[:len(self.queries) - ii - 1]:
-                if possibleDep.name in query.tables:
+                if possibleDep.name in query.table_names():
                     query.dependencies.append(possibleDep.name)

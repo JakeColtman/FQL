@@ -10,8 +10,15 @@ class Query:
         self.columns = []
         self.tables = []
         self.dependencies = []
+        self.description = ""
 
         self.parse()
+
+    def column_names(self):
+        return [x.name for x in self.columns]
+
+    def table_names(self):
+        return [x.name for x in self.tables]
 
     def update_column_type_lookups(self):
         print("insert type for each column")
@@ -24,8 +31,10 @@ class Query:
         state = "start"
         tokens = sqlparse.parse(self.text)[0].tokens
         tokens = [x for x in tokens if not (x.ttype is sqlparse.tokens.Whitespace)]
-
         for token in tokens:
+
+            if type(token) is sqlparse.sql.Comment:
+                self.description = str(token).replace("/*", "").replace("*/", "").replace("--", "").strip()
 
             if token.ttype is sqlparse.tokens.DML:
                 state = "select"
@@ -45,9 +54,8 @@ class Query:
                         else:
                             self.columns.append(Column(item.value, "varchar(255)"))
                     continue
-
                 if token.ttype is not sqlparse.tokens.Punctuation and token.ttype is not sqlparse.tokens.Whitespace and str(token.value) != "\n":
-                    self.columns.append(Column(item.value, "varchar(255)"))
+                    self.columns.append(Column(token.value, "varchar(255)"))
 
             if state == "from":
 

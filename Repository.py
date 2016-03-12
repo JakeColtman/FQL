@@ -7,23 +7,22 @@ class Repository:
         self.file_name = file_name
         if os.path.isfile(self.file_name) and not recreate:
             with open(self.file_name, "rb") as data_file:
-                self.column_type_lookups, self.queries = pickle.load(data_file)
+                self.queries = pickle.load(data_file)
         else:
             self.queries = {}
-            self.column_type_lookups = {}
 
     def add_query(self, query):
         self.queries[query.name] = query
 
     def add_queries(self, queries):
-        return all([self.add_query(x) for x in queries])
+        [self.add_query(x) for x in queries]
 
     def retrieve_query(self, name):
         return self.queries[name]
 
     def save(self):
         with open(self.file_name, "wb") as data_file:
-            output = [self.column_type_lookups, self.queries]
+            output = self.queries
             pickle.dump(output, data_file)
 
     def retrieve_all_queries(self):
