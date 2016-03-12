@@ -13,4 +13,8 @@ they can be difficult to achieve in normal SQL.
 
 ## Philosophy
 
-One of the central claims of the philosophy is that maintainability and readability are more important that 
+One of the central claims of the philosophy is that maintainability and readability are more important that speed or efficiency.  For most analytics projects most of the time, taking an efficiency hit of 2-5x is not an issue, and in those cases where it is, it can be overcome by cacheing or better query planning.  By contrast, writing code that can be easily understood and modified is crucial. 
+
+A second claim is that sql code should be structured as closely as possible to business logic.  It is tempting to write sql code as one highly efficient block of code, but this rapidly descends into a big ball of mud that if difficult to deal with.  By keeping the code similar to the business logic, we can easily walk through the steps involved and get the involvement of domain experts who might not be coding experts
+
+
