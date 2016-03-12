@@ -12,6 +12,6 @@ class RepositorySearcher:
         inName = [q for q in queries if keyword in q.name]
         inBoth = set(inDescr).intersection(inName)
         if len(inBoth) > 0:
-            return inBoth
+            return list(inBoth)
         else:
             return inName

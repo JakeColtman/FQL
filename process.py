@@ -8,6 +8,7 @@ from RepositorySearcher import RepositorySearcher
 from RepositoryTester import setup_repository_test_suite
 from RepositoryTester import RepositoryTest
 from ExportConnections.SqlFile import SqlFile
+from ExportConnections.LookerFile import LookerFile
 
 def process(repo, parser, queryList):
     for query in queryList:
@@ -46,12 +47,11 @@ sqlCode = """ with companies as
         """
 code = SqlCode(sqlCode)
 repo = Repository("repo6.pickle")
-file = SqlFile("testExport.sql")
+file = LookerFile(repo, "testExport.sql")
 repo.add_queries(code.queries)
 searcher = RepositorySearcher(repo)
-print(searcher.get_best_guesses("accounts"))
-qg = QueryGenerator(repo)
-file.export(qg.generate_query("accounts"))
+found = searcher.get_best_guesses("final_query")
+file.export(found[0])
 
 # with open("bigQuery.sql", "r") as file_open:
 #     sqlCode = file_open.read()
