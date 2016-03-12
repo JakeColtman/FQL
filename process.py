@@ -43,15 +43,14 @@ sqlCode = """ with companies as
                 select name
                 from
                 accounts
-                LEFT JOIN
-                companies
-                on companies.a = accounts.b
         """
 code = SqlCode(sqlCode)
 repo = Repository("repo6.pickle")
 repo.add_queries(code.queries)
 searcher = RepositorySearcher(repo)
 print(searcher.get_best_guesses("accounts"))
+qg = QueryGenerator(repo)
+print(qg.generate_query("accounts"))
 
 # with open("bigQuery.sql", "r") as file_open:
 #     sqlCode = file_open.read()

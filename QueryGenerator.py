@@ -6,33 +6,20 @@ class QueryGenerator:
     def __init__(self, repository):
         self.repo = repository
 
-    def _get_relevant_queries_from_repo(self, query_names):
-        output = []
-        newDeps = query_names
-        while len(newDeps) != 0:
-            dependentQueries = [self.repo.retrieve_query(x) for x in newDeps]
-            output.extend(dependentQueries)
-            newDepsNonFlat = [x.dependencies for x in dependentQueries]
-            newDeps = [item for sublist in newDepsNonFlat for item in sublist]
-        final_output = []
-        for queryName in output[::-1]:
-            if queryName not in final_output:
-                final_output.append(queryName)
-        print(final_output)
-        return final_output
+    def generate_query(self, query_name):
+        queries = self.repo.retrieve_query_with_dependencies(query_name)
+        if len(queries) == 1:
+            return queries[0].text
 
-    def generate_query(self, query_names):
-        order_output = self._get_relevant_queries_from_repo(query_names)
-        if len(order_output) == 1: return order_output[0].query
-        #order_output = list(reversed(order_output))
         output = "with "
-        for item in order_output[:-1]:
-            output += "{0} as ({1}),".format(item.name, item.query)
+        for item in queries[:-1]:
+            output += "{0} as ({1}),".format(item.name, item.text)
         output = output[:-1]
-        output += order_output[-1].query
+        output += queries[-1].text
         return output
 
 class TestQueryGenerator:
+
     def __init__(self, repo: Repository, node_name: str, simulated_nodes: list, test_id: int):
         self.repo = repo
         self.node_name = node_name
