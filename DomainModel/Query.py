@@ -13,6 +13,12 @@ class Query:
 
         self.parse()
 
+    def update_column_type_lookups(self):
+        print("insert type for each column")
+        for column in self.columns:
+            print(column)
+            column.sql_type = input()
+
     def parse(self):
 
         state = "start"
