@@ -47,15 +47,22 @@ class Query:
 
                 if type(token) is sqlparse.sql.IdentifierList:
                     for item in token.get_identifiers():
+                        if str(item).strip().lower() == "distinct": continue
                         if type(item) == sqlparse.sql.Identifier and item.has_alias():
-                            self.columns.append(Column(item.get_alias(), "varchar(255)"))
+                            self.columns.append(Column(item.get_alias()))
                         elif type(item) == sqlparse.sql.Identifier:
-                            self.columns.append(Column(item.get_name(), "varchar(255)"))
+                            self.columns.append(Column(item.get_name()))
+                        elif "row_number()" in str(item) or "rank()" in str(item):
+                            colName = str(item)
+                            colName = colName[colName.index(") as") + 4:].strip()
+                            self.columns.append(Column(colName))
                         else:
-                            self.columns.append(Column(item.value, "varchar(255)"))
+                            print(str(item))
+                            self.columns.append(Column(item.value))
                     continue
                 if token.ttype is not sqlparse.tokens.Punctuation and token.ttype is not sqlparse.tokens.Whitespace and str(token.value) != "\n":
-                    self.columns.append(Column(token.value, "varchar(255)"))
+                    if token.value.lower() == "distinct": continue
+                    self.columns.append(Column(token.value))
 
             if state == "from":
 
