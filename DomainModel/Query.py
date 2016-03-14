@@ -63,4 +63,8 @@ class Query:
                     break
 
                 if type(token) is sqlparse.sql.Identifier:
-                    self.tables.append(Table(token.get_name()))
+                    if token.has_alias():
+                        tableName = str(token).replace(token.get_name(), "").strip()
+                    else:
+                        tableName = token.get_name()
+                    self.tables.append(Table(tableName))
