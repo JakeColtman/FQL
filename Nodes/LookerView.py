@@ -1,5 +1,5 @@
 
-class SqlTableNode:
+class LookerViewNode:
 
     def get_columns(self):
         return None

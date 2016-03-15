@@ -1,5 +1,5 @@
 
-class SqlTableNode:
+class SqlCTENode:
 
     def get_columns(self):
         return None

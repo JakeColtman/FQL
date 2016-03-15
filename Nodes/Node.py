@@ -1,5 +1,7 @@
 from abc import ABCMeta, abstractmethod
 from Nodes.SqlTableNode import SqlTableNode
+from Nodes.LookerView import LookerViewNode
+from Nodes.SqlCTE import SqlCTENode
 
 class Node(metaclass=ABCMeta):
 
@@ -28,3 +30,5 @@ class Node(metaclass=ABCMeta):
         return None
 
 Node.register(SqlTableNode)
+Node.register(LookerViewNode)
+Node.register(SqlCTENode)
