@@ -1,4 +1,5 @@
 from abc import ABCMeta, abstractmethod
+from Nodes.SqlTableNode import SqlTableNode
 
 class Node(metaclass=ABCMeta):
 
@@ -25,3 +26,5 @@ class Node(metaclass=ABCMeta):
     @abstractmethod
     def set_docstring(self):
         return None
+
+Node.register(SqlTableNode)

@@ -1,1 +1,3 @@
-from Nodes.Node import Node
+from Nodes.Node import SqlTableNode
+
+SqlTableNode()
