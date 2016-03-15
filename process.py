@@ -4,7 +4,19 @@ from Parser.SqlParser import SqlCodeParser
 from DomainModel.Columns.ColumnFactory import ColumnFactory
 from QueryGraph.QueryGraphFactory import QueryGraphFactory
 from QueryGraph.QueryGraphVisualizer import QueryGraphVisualizer
-parser = SqlCodeParser(ColumnFactory(), "with accounts as (select account_id from test ) select account_id from accounts", "final_query")
+from Nodes.SqlCTE import SqlCTENode
+from typing import List
 
-QueryGraphVisualizer(QueryGraphFactory().create_complete_graph_from_node(parser.nodes[-1])).visualize()
+node1 = SqlCTENode("1", "1")
+node2 = SqlCTENode("2", "1")
+node3 = SqlCTENode("3", "1")
+node4 = SqlCTENode("4", "1")
 
+node4.add_dependency_node(node3)
+node3.add_dependency_node(node2)
+node2.add_dependency_node(node1)
+
+oldGraph = QueryGraphFactory().create_graph_from_node_list([node3, node1, node2, node4])
+
+graph = QueryGraphFactory().extract_connected_graph_of_nodes(oldGraph, node1)
+QueryGraphVisualizer(graph).visualize()

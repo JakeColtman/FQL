@@ -3,6 +3,7 @@ from Nodes.SqlCTE import SqlCTENode
 from Nodes.Node import Node
 from DomainModel.Columns.ColumnFactory import ColumnFactory
 from typing import List
+from Nodes.SqlTableNode import create_table_node
 
 class SqlCodeParser:
     def __init__(self, column_factory: ColumnFactory, text: str, final_query_name):
@@ -51,6 +52,7 @@ class SqlCodeParser:
         self.nodes.append(SqlCTENode(self.query_name, final_query_text))
 
     def _parse_node_contents(self, node: SqlCTENode, node_list: List[SqlCTENode]):
+
         state = "start"
         tokens = sqlparse.parse(self.text)[0].tokens
         tokens = [x for x in tokens if not (x.ttype is sqlparse.tokens.Whitespace)]
@@ -93,5 +95,7 @@ class SqlCodeParser:
                     if len(dependency) == 1:
                         node.add_dependency_node(dependency[0])
 
+        if node.get_dependencies() == []:
+            node = create_table_node(node)
         node_list.append(node)
         return node_list

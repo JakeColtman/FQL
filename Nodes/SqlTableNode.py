@@ -1,6 +1,6 @@
 from typing import List
 from DomainModel.Columns.Column import Column
-
+from Nodes.SqlCTE import SqlCTENode
 class SqlTableNode:
 
     def __init__(self, name, text):
@@ -35,3 +35,10 @@ class SqlTableNode:
 
     def set_text(self, text: str):
         self.text = text
+
+
+def create_table_node(from_node : SqlCTENode):
+    new_node = SqlTableNode(from_node.get_name(), from_node.get_text())
+    new_node.columns = from_node.columns
+    new_node.doc_string = from_node.doc_string
+    return new_node
