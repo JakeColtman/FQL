@@ -20,7 +20,7 @@ class QueryGraph:
                 self.node_lookup[node.node.get_name()].set_text(node.get_text())
 
         return self
-    
+
     def full_replace(self, query_graph: 'QueryGraph'):
         for node in query_graph.node_lookup:
             if type(node) != PlaceholderNode:
