@@ -1,10 +1,11 @@
+from typing import List
 
 class SqlTableNode:
 
     def get_columns(self):
         return None
 
-    def get_dependencies(self):
+    def get_dependencies(self) -> List['Node']:
         return None
 
     def get_docstring(self):

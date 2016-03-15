@@ -2,6 +2,7 @@ from abc import ABCMeta, abstractmethod
 from Nodes.SqlTableNode import SqlTableNode
 from Nodes.LookerView import LookerViewNode
 from Nodes.SqlCTE import SqlCTENode
+from typing import List
 
 class Node(metaclass=ABCMeta):
 
@@ -14,7 +15,7 @@ class Node(metaclass=ABCMeta):
         return None
 
     @abstractmethod
-    def get_dependencies(self):
+    def get_dependencies(self) -> List['Node']:
         return None
 
     @abstractmethod
