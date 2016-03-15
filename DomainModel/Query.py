@@ -1,6 +1,8 @@
 import sqlparse
+
+from DomainModel.Columns.Column import Column
 from DomainModel.Table import Table
-from DomainModel.Column import Column
+
 
 class Query:
 
