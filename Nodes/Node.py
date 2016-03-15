@@ -10,6 +10,10 @@ class Node(metaclass=ABCMeta):
         return None
 
     @abstractmethod
+    def get_name(self):
+        return None
+
+    @abstractmethod
     def get_dependencies(self):
         return None
 

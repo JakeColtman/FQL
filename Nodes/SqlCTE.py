@@ -18,3 +18,6 @@ class SqlCTENode:
 
     def set_docstring(self):
         return None
+
+    def get_name(self):
+        return None
