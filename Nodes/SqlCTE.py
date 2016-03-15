@@ -6,8 +6,11 @@ class SqlCTENode:
     def __init__(self, name, text):
         self.name, self.text = name, text
         self.dependencies = []
+        self.columns = []
+        self.doc_string = ""
+
     def get_columns(self):
-        return None
+        return self.columns
 
     def get_dependencies(self) -> List['Node']:
         return self.dependencies
@@ -16,13 +19,13 @@ class SqlCTENode:
         return None
 
     def add_column(self, column: Column):
-        return None
+        self.columns.append(column)
 
     def add_dependency_node(self, node : 'Node'):
         self.dependencies.append(node)
 
-    def set_docstring(self):
-        return None
+    def set_docstring(self, doc_string: str):
+        self.doc_string = doc_string
 
     def get_name(self):
         return self.name
