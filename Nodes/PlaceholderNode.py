@@ -1,16 +1,17 @@
 from typing import List
-from DomainModel.Columns import Column
+from DomainModel.Columns.Column import Column
 
-class SqlCTENode:
+class PlaceholderNode:
 
     def __init__(self, name, text):
         self.name, self.text = name, text
         self.dependencies = []
+
     def get_columns(self):
         return None
 
     def get_dependencies(self) -> List['Node']:
-        return self.dependencies
+        return None
 
     def get_docstring(self):
         return None
@@ -19,16 +20,10 @@ class SqlCTENode:
         return None
 
     def add_dependency_node(self, node : 'Node'):
-        self.dependencies.append(node)
+        pass
 
     def set_docstring(self):
         return None
 
     def get_name(self):
         return self.name
-
-    def get_text(self):
-        return self.text
-
-    def set_text(self, text: str):
-        self.text = text

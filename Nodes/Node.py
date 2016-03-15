@@ -10,6 +10,12 @@ class Node(metaclass=ABCMeta):
     def get_columns(self):
         return None
 
+    def get_text(self):
+        return None
+
+    def set_text(self):
+        return None
+
     @abstractmethod
     def get_name(self):
         return None

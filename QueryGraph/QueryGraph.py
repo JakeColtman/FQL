@@ -1,5 +1,7 @@
 from Nodes.Node import Node
+from Nodes.PlaceholderNode import PlaceholderNode
 from typing import List
+
 
 class QueryGraph:
     def __init__(self):
@@ -11,7 +13,15 @@ class QueryGraph:
     def get_node_by_name(self, name):
         return self.node_lookup[name]
 
-    def add_nodes(self, nodes : List[Node], replacement = False):
-        for node in nodes:
-            if replacement or node.get_name() not in self.node_lookup:
-                self.add_node(node)
+    def value_replace(self, query_graph: 'QueryGraph'):
+        for node in query_graph.node_lookup:
+            if type(node) != PlaceholderNode:
+                self.node_lookup[node.node.get_name()].set_docstring(node.get_docstring())
+                self.node_lookup[node.node.get_name()].set_text(node.get_text())
+
+        return self
+    
+    def full_replace(self, query_graph: 'QueryGraph'):
+        for node in query_graph.node_lookup:
+            if type(node) != PlaceholderNode:
+                self.node_lookup[node.node.get_name()] = node
