@@ -2,6 +2,9 @@ from typing import List
 
 class SqlTableNode:
 
+    def __init__(self, cte_name, text):
+        self.cte_name, self.text = cte_name, text
+
     def get_columns(self):
         return None
 
@@ -14,7 +17,7 @@ class SqlTableNode:
     def set_columns(self):
         return None
 
-    def set_dependencies(self):
+    def add_dependency_node(self, node : 'Node'):
         return None
 
     def set_docstring(self):

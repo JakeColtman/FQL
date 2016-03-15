@@ -23,11 +23,11 @@ class Node(metaclass=ABCMeta):
         return None
 
     @abstractmethod
-    def set_columns(self):
+    def add_column(self):
         return None
 
     @abstractmethod
-    def set_dependencies(self):
+    def add_dependency_node(self, node : 'Node'):
         return None
 
     @abstractmethod

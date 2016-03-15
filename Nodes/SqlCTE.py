@@ -11,10 +11,10 @@ class SqlCTENode:
     def get_docstring(self):
         return None
 
-    def set_columns(self):
+    def add_column(self):
         return None
 
-    def set_dependencies(self):
+    def add_dependency_node(self, node : 'Node'):
         return None
 
     def set_docstring(self):
