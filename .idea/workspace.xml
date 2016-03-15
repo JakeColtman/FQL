@@ -47,7 +47,7 @@
         <entry file="file://$PROJECT_DIR$/Parser/SqlParser.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="90" column="48" selection-start-line="90" selection-start-column="29" selection-end-line="90" selection-end-column="48" />
+              <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -104,9 +104,11 @@
       <file leaf-file-name="QueryGraph.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/QueryGraph/QueryGraph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3011811">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.53543305">
+              <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -184,16 +186,16 @@
         <option value="$PROJECT_DIR$/Queries/Query.py" />
         <option value="$PROJECT_DIR$/Queries/QueryFactory.py" />
         <option value="$PROJECT_DIR$/QueryGraph/QueryFactory.py" />
-        <option value="$PROJECT_DIR$/QueryGraph/QueryGraph.py" />
         <option value="$PROJECT_DIR$/QueryGraph/QueryGraphFactory.py" />
         <option value="$PROJECT_DIR$/Nodes/NodeFactory.py" />
         <option value="$PROJECT_DIR$/Nodes/SqlTableNode.py" />
         <option value="$PROJECT_DIR$/Nodes/Node.py" />
         <option value="$PROJECT_DIR$/Nodes/LookerView.py" />
         <option value="$PROJECT_DIR$/DomainModel/Columns/ColumnFactory.py" />
-        <option value="$PROJECT_DIR$/Parser/SqlParser.py" />
         <option value="$PROJECT_DIR$/process.py" />
         <option value="$PROJECT_DIR$/Nodes/SqlCTE.py" />
+        <option value="$PROJECT_DIR$/Parser/SqlParser.py" />
+        <option value="$PROJECT_DIR$/QueryGraph/QueryGraph.py" />
       </list>
     </option>
   </component>
@@ -1081,16 +1083,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DomainModel/Query.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DomainModel/Columns/Column.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1127,16 +1119,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Parser/SqlParser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="90" column="48" selection-start-line="90" selection-start-column="29" selection-end-line="90" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/SqlCodeTester.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1165,11 +1147,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Parser/SqlParser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DomainModel/Query.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/QueryGraph/QueryGraph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3011811">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.53543305">
+          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

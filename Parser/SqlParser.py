@@ -18,6 +18,9 @@ class SqlCodeParser:
 
         self.nodes = newNodeList
 
+    def get_node_list(self):
+        return self.nodes
+
     def split_into_cte_queries(self):
 
         tokens = sqlparse.parse(self.text)[0].tokens
