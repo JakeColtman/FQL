@@ -11,7 +11,7 @@ class PlaceholderNode:
         return None
 
     def get_dependencies(self) -> List['Node']:
-        return None
+        return []
 
     def get_docstring(self):
         return None

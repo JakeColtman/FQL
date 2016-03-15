@@ -25,7 +25,7 @@
         <entry file="file://$PROJECT_DIR$/process.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+              <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -52,6 +52,16 @@
               <caret line="43" column="19" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="19" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
+                <marker date="1458077364860" expanded="true" signature="125:903" placeholder="..." />
+                <marker date="1458077364860" expanded="true" signature="162:290" placeholder="..." />
+                <marker date="1458077364860" expanded="true" signature="318:346" placeholder="..." />
+                <marker date="1458077364860" expanded="true" signature="395:428" placeholder="..." />
+                <marker date="1458077364860" expanded="true" signature="458:489" placeholder="..." />
+                <marker date="1458077364860" expanded="true" signature="532:568" placeholder="..." />
+                <marker date="1458077364860" expanded="true" signature="619:658" placeholder="..." />
+                <marker date="1458077364860" expanded="true" signature="705:742" placeholder="..." />
+                <marker date="1458077364860" expanded="true" signature="767:792" placeholder="..." />
+                <marker date="1458077364860" expanded="true" signature="952:1132" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -64,17 +74,18 @@
               <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="30" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
+                <marker date="1458076833997" expanded="true" signature="81:859" placeholder="..." />
+                <marker date="1458076833997" expanded="true" signature="118:246" placeholder="..." />
+                <marker date="1458076833997" expanded="true" signature="274:302" placeholder="..." />
+                <marker date="1458076833997" expanded="true" signature="351:384" placeholder="..." />
+                <marker date="1458076833997" expanded="true" signature="414:445" placeholder="..." />
+                <marker date="1458076833997" expanded="true" signature="488:524" placeholder="..." />
+                <marker date="1458076833997" expanded="true" signature="575:614" placeholder="..." />
+                <marker date="1458076833997" expanded="true" signature="661:698" placeholder="..." />
+                <marker date="1458076833997" expanded="true" signature="723:748" placeholder="..." />
+                <marker date="1458076833997" expanded="true" signature="773:798" placeholder="..." />
+                <marker date="1458076833997" expanded="true" signature="834:859" placeholder="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QueryGenerator.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/QueryGenerator.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -99,11 +110,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QueryGraphFactory.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="QueryGraphFactory.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/QueryGraph/QueryGraphFactory.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.53149605">
-              <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="49" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="49" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
@@ -115,10 +126,20 @@
         <entry file="file://$PROJECT_DIR$/QueryGraph/QueryGraphVisualizer.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlaceholderNode.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Nodes/PlaceholderNode.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4015748">
+              <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -188,7 +209,6 @@
         <option value="$PROJECT_DIR$/Nodes/NodeFactory.py" />
         <option value="$PROJECT_DIR$/Nodes/LookerView.py" />
         <option value="$PROJECT_DIR$/DomainModel/Columns/ColumnFactory.py" />
-        <option value="$PROJECT_DIR$/Nodes/PlaceholderNode.py" />
         <option value="$PROJECT_DIR$/Nodes/Node.py" />
         <option value="$PROJECT_DIR$/QueryGraph/QueryGraph.py" />
         <option value="$PROJECT_DIR$/Visualize.py" />
@@ -196,8 +216,9 @@
         <option value="$PROJECT_DIR$/Nodes/SqlCTE.py" />
         <option value="$PROJECT_DIR$/Nodes/SqlTableNode.py" />
         <option value="$PROJECT_DIR$/Parser/SqlParser.py" />
-        <option value="$PROJECT_DIR$/process.py" />
         <option value="$PROJECT_DIR$/QueryGraph/QueryGraphFactory.py" />
+        <option value="$PROJECT_DIR$/process.py" />
+        <option value="$PROJECT_DIR$/Nodes/PlaceholderNode.py" />
       </list>
     </option>
   </component>
@@ -1060,16 +1081,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Nodes/PlaceholderNode.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Nodes/Node.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1095,7 +1106,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="45" column="49" selection-start-line="45" selection-start-column="49" selection-end-line="45" selection-end-column="49" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1124,16 +1135,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/QueryGraph/QueryGraphVisualizer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Visualize.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1150,6 +1151,17 @@
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="30" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
+            <marker date="1458076833997" expanded="true" signature="81:859" placeholder="..." />
+            <marker date="1458076833997" expanded="true" signature="118:246" placeholder="..." />
+            <marker date="1458076833997" expanded="true" signature="274:302" placeholder="..." />
+            <marker date="1458076833997" expanded="true" signature="351:384" placeholder="..." />
+            <marker date="1458076833997" expanded="true" signature="414:445" placeholder="..." />
+            <marker date="1458076833997" expanded="true" signature="488:524" placeholder="..." />
+            <marker date="1458076833997" expanded="true" signature="575:614" placeholder="..." />
+            <marker date="1458076833997" expanded="true" signature="661:698" placeholder="..." />
+            <marker date="1458076833997" expanded="true" signature="723:748" placeholder="..." />
+            <marker date="1458076833997" expanded="true" signature="773:798" placeholder="..." />
+            <marker date="1458076833997" expanded="true" signature="834:859" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1160,6 +1172,16 @@
           <caret line="43" column="19" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="19" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
+            <marker date="1458077364860" expanded="true" signature="125:903" placeholder="..." />
+            <marker date="1458077364860" expanded="true" signature="162:290" placeholder="..." />
+            <marker date="1458077364860" expanded="true" signature="318:346" placeholder="..." />
+            <marker date="1458077364860" expanded="true" signature="395:428" placeholder="..." />
+            <marker date="1458077364860" expanded="true" signature="458:489" placeholder="..." />
+            <marker date="1458077364860" expanded="true" signature="532:568" placeholder="..." />
+            <marker date="1458077364860" expanded="true" signature="619:658" placeholder="..." />
+            <marker date="1458077364860" expanded="true" signature="705:742" placeholder="..." />
+            <marker date="1458077364860" expanded="true" signature="767:792" placeholder="..." />
+            <marker date="1458077364860" expanded="true" signature="952:1132" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1174,23 +1196,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/QueryGraph/QueryGraphFactory.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="49" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/process.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/QueryGraph/QueryGraphFactory.py">
+    <entry file="file://$PROJECT_DIR$/QueryGraph/QueryGraphVisualizer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53149605">
-          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Nodes/PlaceholderNode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4015748">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>

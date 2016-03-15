@@ -1,6 +1,7 @@
 from QueryGraph.QueryGraph import QueryGraph
 from typing import List
 from Nodes.Node import Node
+from Nodes.PlaceholderNode import PlaceholderNode
 
 class QueryGraphFactory:
     def create_runnable_graph_from_node(self, node):
@@ -9,6 +10,19 @@ class QueryGraphFactory:
         depList = node.get_dependencies()
         while len(depList) != 0:
             [graph.add_node(x) for x in depList]
+            dependentNodes = [x.get_dependencies() for x in depList]
+            depList = [item for sublist in dependentNodes for item in sublist]
+        return graph
+
+    def create_truncated_runnable_graph_from_node(self, node, stopping_names: List[str]):
+        graph = QueryGraph()
+        graph.add_node(node)
+        depList = node.get_dependencies()
+        while len(depList) != 0:
+            stoppedList, addList = [x for x in depList if x.get_name() in stopping_names], [x for x in depList if x.get_name() in stopping_names]
+            [graph.add_node(x) for x in addList]
+            for item in stoppedList:
+                graph.add_node(PlaceholderNode(item.get_name(), ""))
             dependentNodes = [x.get_dependencies() for x in depList]
             depList = [item for sublist in dependentNodes for item in sublist]
         return graph

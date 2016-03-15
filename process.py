@@ -18,5 +18,5 @@ node2.add_dependency_node(node1)
 
 oldGraph = QueryGraphFactory().create_graph_from_node_list([node3, node1, node2, node4])
 
-graph = QueryGraphFactory().extract_connected_graph_of_nodes(oldGraph, node1)
+graph = QueryGraphFactory().create_truncated_runnable_graph_from_node(node4, '3')
 QueryGraphVisualizer(graph).visualize()
