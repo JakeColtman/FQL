@@ -16,7 +16,7 @@ class SqlTableNode:
         return self.dependencies
 
     def get_docstring(self):
-        return None
+        return self.doc_string
 
     def add_column(self, column: Column):
         self.columns.append(column)
