@@ -2,6 +2,7 @@ from QueryGraph.QueryGraph import QueryGraph
 from typing import List
 from Nodes.Node import Node
 from Nodes.PlaceholderNode import PlaceholderNode
+from copy import copy
 
 class QueryGraphFactory:
     def create_runnable_graph_from_node(self, node):
@@ -9,7 +10,7 @@ class QueryGraphFactory:
         graph.add_node(node)
         depList = node.get_dependencies()
         while len(depList) != 0:
-            [graph.add_node(x) for x in depList]
+            [graph.add_node(copy(x)) for x in depList]
             dependentNodes = [x.get_dependencies() for x in depList]
             depList = [item for sublist in dependentNodes for item in sublist]
         return graph
@@ -20,7 +21,7 @@ class QueryGraphFactory:
         depList = node.get_dependencies()
         while len(depList) != 0:
             stoppedList, addList = [x for x in depList if x.get_name() in stopping_names], [x for x in depList if x.get_name() in stopping_names]
-            [graph.add_node(x) for x in addList]
+            [graph.add_node(copy(x)) for x in addList]
             for item in stoppedList:
                 graph.add_node(PlaceholderNode(item.get_name(), ""))
             dependentNodes = [x.get_dependencies() for x in depList]
@@ -43,7 +44,7 @@ class QueryGraphFactory:
                     total_included.append(node_considered)
                     additions = True
 
-        [graph.add_node(x) for x in total_included]
+        [graph.add_node(copy(x)) for x in total_included]
 
         return graph
 
