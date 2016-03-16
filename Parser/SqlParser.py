@@ -75,6 +75,7 @@ class SqlCodeParser:
                     continue
                 if token.ttype is not sqlparse.tokens.Punctuation and token.ttype is not sqlparse.tokens.Whitespace and str(token.value) != "\n":
                     column = self.column_factory.create_column(str(token))
+                    print("Here")
                     node.add_column(column)
 
             if state == "from":

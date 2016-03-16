@@ -5,7 +5,7 @@ from Nodes.PlaceholderNode import PlaceholderNode
 from copy import copy
 
 class QueryGraphFactory:
-    def create_runnable_graph_from_node(self, node):
+    def create_runnable_graph_from_node(self, node, stopping_names: List[str] = []):
         graph = QueryGraph()
         graph.add_node(node)
         depList = node.get_dependencies()
@@ -44,9 +44,7 @@ class QueryGraphFactory:
                     total_included.append(node_considered)
                     additions = True
 
-        [graph.add_node(copy(x)) for x in total_included]
-
-        return graph
+        return self.create_graph_from_node_list([copy(x) for x in total_included])
 
     def create_graph_from_node_list(self, node_list: List[Node]):
         graph = QueryGraph()
