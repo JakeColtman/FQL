@@ -5,9 +5,9 @@ from Nodes.PlaceholderNode import PlaceholderNode
 from copy import copy
 
 class QueryGraphFactory:
-    def create_runnable_graph_from_node(self, node, stopping_names: List[str] = []):
+    def create_runnable_graph_from_node(self, node):
         graph = QueryGraph()
-        graph.add_node(node)
+        graph.add_node(copy(node))
         depList = node.get_dependencies()
         while len(depList) != 0:
             [graph.add_node(copy(x)) for x in depList]

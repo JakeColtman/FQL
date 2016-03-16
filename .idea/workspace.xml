@@ -21,16 +21,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SqlCodeTester.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tests/SqlCodeTester.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="34" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SqlParser.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Parser/SqlParser.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -47,7 +37,19 @@
         <entry file="file://$PROJECT_DIR$/Tests/SqlParserTests.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+              <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SQLSerializerTests.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tests/SQLSerializerTests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="45" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -67,45 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ColumnFactory.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DomainModel/Columns/ColumnFactory.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.254023">
-              <caret line="13" column="90" selection-start-line="13" selection-start-column="90" selection-end-line="13" selection-end-column="90" />
-              <folding>
-                <element signature="e#0#45#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Node.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Nodes/Node.py">
+      <file leaf-file-name="QueryGraphTests.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tests/QueryGraphTests.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="19" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SqlCode.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SqlCode.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="52" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SQLSerializer.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Serializer/SQLSerializer.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="45" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
@@ -113,13 +81,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SqlTableNode.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Nodes/SqlTableNode.py">
+      <file leaf-file-name="QueryGraphFactoryTests.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Tests/QueryGraphFactoryTests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.15632184">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding>
-                <element signature="e#0#23#0" expanded="true" />
+                <element signature="e#0#44#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -129,10 +97,18 @@
         <entry file="file://$PROJECT_DIR$/QueryGraph/QueryGraphFactory.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#44#0" expanded="true" />
-              </folding>
+              <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QueryGraph.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/QueryGraph/QueryGraph.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -142,8 +118,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Python Unit Test" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -197,11 +173,13 @@
         <option value="$PROJECT_DIR$/Nodes/PlaceholderNode.py" />
         <option value="$PROJECT_DIR$/QueryGraph/QueryGraph.py" />
         <option value="$PROJECT_DIR$/Serializer/SQLSerializer.py" />
-        <option value="$PROJECT_DIR$/QueryGraph/QueryGraphFactory.py" />
         <option value="$PROJECT_DIR$/DomainModel/Columns/Column.py" />
         <option value="$PROJECT_DIR$/Parser/SqlParser.py" />
         <option value="$PROJECT_DIR$/Tests/SqlParserTests.py" />
         <option value="$PROJECT_DIR$/DomainModel/Columns/ColumnFactory.py" />
+        <option value="$PROJECT_DIR$/Tests/QueryGraphTests.py" />
+        <option value="$PROJECT_DIR$/Tests/QueryGraphFactoryTests.py" />
+        <option value="$PROJECT_DIR$/QueryGraph/QueryGraphFactory.py" />
       </list>
     </option>
   </component>
@@ -266,6 +244,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FQL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FQL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QueryGraph" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -366,70 +358,7 @@
       <recent name="C:\Users\j.coltman\Documents\GitHub\FQL\Connections\SQL" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Nosetests in SqlParserTests">
-    <configuration default="false" name="Nosetest SQLParserTests.test_parser_correctly_process_simple_query" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="FQL" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tests/SqlParserTests.py" />
-      <option name="CLASS_NAME" value="SQLParserTests" />
-      <option name="METHOD_NAME" value="test_parser_correctly_process_simple_query" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_METHOD" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Nosetest SQLParserTests.test_parsers_dependency_single_cte" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="FQL" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tests/SqlParserTests.py" />
-      <option name="CLASS_NAME" value="SQLParserTests" />
-      <option name="METHOD_NAME" value="test_parsers_dependency_single_cte" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_METHOD" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Nosetest SQLParserTests.test_parsers_dependency_two_ctes_joined" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="FQL" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tests/SqlParserTests.py" />
-      <option name="CLASS_NAME" value="SQLParserTests" />
-      <option name="METHOD_NAME" value="test_parsers_dependency_two_ctes_joined" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_METHOD" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Nosetests in QueryGraphFactoryTests">
     <configuration default="false" name="Nosetests in SqlParserTests" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -466,6 +395,69 @@
       <option name="METHOD_NAME" value="test_identifies_multiple_select_columns" />
       <option name="FOLDER_NAME" value="" />
       <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Nosetests in QueryGraphTests" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="FQL" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tests/QueryGraphTests.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Nosetest QueryGeneratorTests.test_node_list_contains_all_nodes" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="FQL" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tests/QueryGraphTests.py" />
+      <option name="CLASS_NAME" value="QueryGeneratorTests" />
+      <option name="METHOD_NAME" value="test_node_list_contains_all_nodes" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Nosetests in QueryGraphFactoryTests" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="FQL" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tests/QueryGraphFactoryTests.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
       <option name="PARAMS" value="" />
@@ -595,19 +587,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.Nosetest SQLParserTests.test_parser_correctly_process_simple_query" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Nosetest SQLParserTests.test_parsers_dependency_single_cte" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Nosetest SQLParserTests.test_parsers_dependency_two_ctes_joined" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Nosetests in SqlParserTests" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Nosetest SQLParserTests.test_identifies_multiple_select_columns" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.Nosetests in SqlParserTests" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Nosetest SQLParserTests.test_identifies_multiple_select_columns" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Nosetests in QueryGraphTests" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Nosetest QueryGeneratorTests.test_node_list_contains_all_nodes" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Nosetests in QueryGraphFactoryTests" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Nosetests in SqlParserTests" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Nosetest SQLParserTests.test_identifies_multiple_select_columns" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Nosetest SQLParserTests.test_parsers_dependency_two_ctes_joined" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Nosetest SQLParserTests.test_parsers_dependency_single_cte" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Nosetest SQLParserTests.test_parser_correctly_process_simple_query" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Nosetests in QueryGraphFactoryTests" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Nosetest QueryGeneratorTests.test_node_list_contains_all_nodes" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Nosetests in QueryGraphTests" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Nosetests in SqlParserTests" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Nosetest SQLParserTests.test_identifies_multiple_select_columns" />
       </list>
     </recent_temporary>
   </component>
@@ -625,29 +617,29 @@
     <servers />
   </component>
   <component name="TestHistory">
+    <history-entry file="Nosetest_QueryGeneratorTests_test_node_list_contains_all_nodes - 2016.03.16 at 18h 42m 48s.xml">
+      <configuration name="Nosetest QueryGeneratorTests.test_node_list_contains_all_nodes" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetest_QueryGeneratorTests_test_node_list_contains_all_nodes - 2016.03.16 at 18h 44m 01s.xml">
+      <configuration name="Nosetest QueryGeneratorTests.test_node_list_contains_all_nodes" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetest_QueryGeneratorTests_test_node_list_contains_all_nodes - 2016.03.16 at 18h 44m 18s.xml">
+      <configuration name="Nosetest QueryGeneratorTests.test_node_list_contains_all_nodes" configurationId="tests" />
+    </history-entry>
     <history-entry file="Nosetest_SQLParserTests_test_identifies_multiple_select_columns - 2016.03.16 at 18h 34m 22s.xml">
       <configuration name="Nosetest SQLParserTests.test_identifies_multiple_select_columns" configurationId="tests" />
     </history-entry>
     <history-entry file="Nosetest_SQLParserTests_test_identifies_multiple_select_columns - 2016.03.16 at 18h 35m 09s.xml">
       <configuration name="Nosetest SQLParserTests.test_identifies_multiple_select_columns" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetest_SQLParserTests_test_parser_correctly_process_simple_query - 2016.03.16 at 18h 28m 05s.xml">
-      <configuration name="Nosetest SQLParserTests.test_parser_correctly_process_simple_query" configurationId="tests" />
+    <history-entry file="Nosetests_in_QueryGraphFactoryTests - 2016.03.16 at 20h 07m 47s.xml">
+      <configuration name="Nosetests in QueryGraphFactoryTests" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetest_SQLParserTests_test_parser_correctly_process_simple_query - 2016.03.16 at 18h 28m 16s.xml">
-      <configuration name="Nosetest SQLParserTests.test_parser_correctly_process_simple_query" configurationId="tests" />
+    <history-entry file="Nosetests_in_QueryGraphFactoryTests - 2016.03.16 at 20h 08m 12s.xml">
+      <configuration name="Nosetests in QueryGraphFactoryTests" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetest_SQLParserTests_test_parsers_dependency_single_cte - 2016.03.16 at 18h 29m 51s.xml">
-      <configuration name="Nosetest SQLParserTests.test_parsers_dependency_single_cte" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetest_SQLParserTests_test_parsers_dependency_two_ctes_joined - 2016.03.16 at 18h 32m 00s.xml">
-      <configuration name="Nosetest SQLParserTests.test_parsers_dependency_two_ctes_joined" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetest_SQLParserTests_test_parsers_dependency_two_ctes_joined - 2016.03.16 at 18h 32m 23s.xml">
-      <configuration name="Nosetest SQLParserTests.test_parsers_dependency_two_ctes_joined" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetest_SQLParserTests_test_parsers_dependency_two_ctes_joined - 2016.03.16 at 18h 33m 57s.xml">
-      <configuration name="Nosetest SQLParserTests.test_parsers_dependency_two_ctes_joined" configurationId="tests" />
+    <history-entry file="Nosetests_in_QueryGraphTests - 2016.03.16 at 18h 40m 01s.xml">
+      <configuration name="Nosetests in QueryGraphTests" configurationId="tests" />
     </history-entry>
     <history-entry file="Nosetests_in_SqlParserTests - 2016.03.16 at 18h 34m 07s.xml">
       <configuration name="Nosetests in SqlParserTests" configurationId="tests" />
@@ -675,7 +667,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850778" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899627" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.7850779" sideWeight="0.49789253" order="2" side_tool="false" content_ui="tabs" x="-1639" y="93" width="1898" height="246" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="WINDOWED" visible="true" show_stripe_button="true" weight="1.0" sideWeight="0.49789253" order="2" side_tool="false" content_ui="tabs" x="-1639" y="93" width="1898" height="246" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.49789253" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -712,20 +704,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Repository.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/RepositoryTests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#15#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -739,12 +722,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/QueryGeneratorTests.py">
+    <entry file="file://$PROJECT_DIR$/Tests/SQLSerializerTests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="73" column="45" selection-start-line="73" selection-start-column="45" selection-end-line="73" selection-end-column="45" />
           <folding>
-            <element signature="e#0#15#0" expanded="false" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -775,9 +758,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#15#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -791,12 +772,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/QueryGeneratorTests.py">
+    <entry file="file://$PROJECT_DIR$/Tests/SQLSerializerTests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="73" column="45" selection-start-line="73" selection-start-column="45" selection-end-line="73" selection-end-column="45" />
           <folding>
-            <element signature="e#0#15#0" expanded="false" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -827,9 +808,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#15#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -916,26 +895,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="51" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/QueryGeneratorTests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="111" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="111" />
-          <folding>
-            <element signature="e#0#15#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/RepositoryTests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#15#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1028,14 +987,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/process.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/QueryGraph/QueryGraphVisualizer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1057,36 +1008,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
           <folding>
-            <element signature="e#0#44#0" expanded="true" />
+            <element signature="e#0#44#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/QueryGraph/QueryGraphFactory.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/QueryGraph/QueryGraph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#27#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/SqlCodeTester.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="34" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1108,16 +1031,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Parser/SqlParser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="77" column="31" selection-start-line="77" selection-start-column="31" selection-end-line="77" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DomainModel/Columns/Column.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1133,27 +1046,99 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/SqlParserTests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#0#23#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DomainModel/Columns/ColumnFactory.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.254023">
+        <state vertical-scroll-proportion="0.0">
           <caret line="13" column="90" selection-start-line="13" selection-start-column="90" selection-end-line="13" selection-end-column="90" />
           <folding>
-            <element signature="e#0#45#0" expanded="true" />
+            <element signature="e#0#45#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parser/SqlParser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="77" column="31" selection-start-line="77" selection-start-column="31" selection-end-line="77" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/RepositoryTests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/SqlParserTests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/SQLSerializerTests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/QueryGraphTests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QueryGraph/QueryGraphFactory.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QueryGraph/QueryGraph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/QueryGraphFactoryTests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15632184">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
           </folding>
         </state>
       </provider>
