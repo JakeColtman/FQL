@@ -1,7 +1,8 @@
-from Repository import Repository
+from DomainModel.Columns.Column import Column
 from DomainModel.Query import Query
 from QueryGenerator import QueryGenerator
-from DomainModel.Column import Column
+from Repository import Repository
+
 
 class LookerFile:
 
