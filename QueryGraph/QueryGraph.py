@@ -30,6 +30,11 @@ class QueryGraph:
             node = query_graph.node_lookup[node_name]
             if type(node) != PlaceholderNode:
                 self.node_lookup[node.get_name()] = node
+            else:
+                old_node = self.node_lookup[node.get_name()]
+                old_node.dependencies = []
+                for dependency in node.get_dependencies():
+                    old_node.add_dependency_node(dependency)
 
     def get_ordered_node_list_from_node(self, node: Node):
         output = [node]
