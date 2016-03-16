@@ -35,7 +35,7 @@ class SqlCodeParser:
                 for cte in ctes:
                     cte_name = cte.value
                     cte_text = str(cte).replace(cte.value + " as", "").strip()[1:-1]
-                    self.queries.append(SqlCTENode(cte_name, cte_text))
+                    self.nodes.append(SqlCTENode(cte_name, cte_text))
                 break
 
             if type(tokens[ii]) == type(tokens[ii]) == sqlparse.sql.Identifier:
@@ -52,9 +52,8 @@ class SqlCodeParser:
         self.nodes.append(SqlCTENode(self.query_name, final_query_text))
 
     def _parse_node_contents(self, node: SqlCTENode, node_list: List[SqlCTENode]):
-
         state = "start"
-        tokens = sqlparse.parse(self.text)[0].tokens
+        tokens = sqlparse.parse(node.get_text())[0].tokens
         tokens = [x for x in tokens if not (x.ttype is sqlparse.tokens.Whitespace)]
         for token in tokens:
 
@@ -75,8 +74,8 @@ class SqlCodeParser:
                         node.add_column(self.column_factory.create_column(item))
                     continue
                 if token.ttype is not sqlparse.tokens.Punctuation and token.ttype is not sqlparse.tokens.Whitespace and str(token.value) != "\n":
-                    print(str(token))
                     column = self.column_factory.create_column(str(token))
+                    print("Here")
                     node.add_column(column)
 
             if state == "from":
