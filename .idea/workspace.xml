@@ -33,13 +33,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QueryGraphTests.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="QueryGraphTests.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tests/QueryGraphTests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.3091954">
-              <caret line="120" column="31" selection-start-line="120" selection-start-column="31" selection-end-line="120" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="165" column="15" selection-start-line="165" selection-start-column="15" selection-end-line="165" selection-end-column="15" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Repository.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Repository.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QueryGraphRepo.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/QueryGraph/QueryGraphRepo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.41034484">
+              <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -57,31 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NodeList.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Serializer/NodeList.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="QueryGraphFactory.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/QueryGraph/QueryGraphFactory.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="29" column="58" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlaceholderNode.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Nodes/PlaceholderNode.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="27" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -147,7 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Tests/Query.py" />
         <option value="$PROJECT_DIR$/Tests/TestQueryGeneratorTest.py" />
         <option value="$PROJECT_DIR$/connection_string.txt" />
         <option value="$PROJECT_DIR$/Tests/ParserTests.py" />
@@ -162,7 +165,6 @@
         <option value="$PROJECT_DIR$/DomainModel/Table.py" />
         <option value="$PROJECT_DIR$/DomainModel/Column.py" />
         <option value="$PROJECT_DIR$/DomainModel/Query.py" />
-        <option value="$PROJECT_DIR$/Repository.py" />
         <option value="$PROJECT_DIR$/QueryGenerator.py" />
         <option value="$PROJECT_DIR$/ExportConnections/SqlFile.py" />
         <option value="$PROJECT_DIR$/RepositorySearcher.py" />
@@ -198,6 +200,8 @@
         <option value="$PROJECT_DIR$/QueryGraph/QueryGraphFactory.py" />
         <option value="$PROJECT_DIR$/QueryGraph/QueryGraph.py" />
         <option value="$PROJECT_DIR$/Tests/QueryGraphTests.py" />
+        <option value="$PROJECT_DIR$/Repository.py" />
+        <option value="$PROJECT_DIR$/QueryGraph/QueryGraphRepo.py" />
       </list>
     </option>
   </component>
@@ -383,11 +387,11 @@
       <recent name="C:\Users\j.coltman\Documents\GitHub\FQL" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\j.coltman\Documents\GitHub\FQL\QueryGraph" />
       <recent name="C:\Users\j.coltman\Documents\GitHub\FQL\Queries" />
       <recent name="C:\Users\j.coltman\Documents\GitHub\FQL\Nodes" />
       <recent name="C:\Users\j.coltman\Documents\GitHub\FQL\Tests" />
       <recent name="C:\Users\j.coltman\Documents\GitHub\FQL\Parser" />
-      <recent name="C:\Users\j.coltman\Documents\GitHub\FQL\Connections\SQL" />
     </key>
   </component>
   <component name="RunManager" selected="Python tests.Nosetests in QueryGraphTests">
@@ -699,7 +703,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850778" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899627" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="WINDOWED" visible="true" show_stripe_button="true" weight="1.0" sideWeight="0.49789253" order="2" side_tool="false" content_ui="tabs" x="-1639" y="93" width="1898" height="246" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="WINDOWED" visible="true" show_stripe_button="true" weight="1.0" sideWeight="0.49789253" order="2" side_tool="false" content_ui="tabs" x="-1639" y="93" width="1898" height="246" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.49789253" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -731,21 +735,11 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="5" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/QueryGenerator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#33#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/SQLSerializerTests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -972,14 +966,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Repository.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="31" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Visualize.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1167,10 +1153,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/QueryGraphTests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.3091954">
-          <caret line="120" column="31" selection-start-line="120" selection-start-column="31" selection-end-line="120" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="165" column="15" selection-start-line="165" selection-start-column="15" selection-end-line="165" selection-end-column="15" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Repository.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QueryGraph/QueryGraphRepo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41034484">
+          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
