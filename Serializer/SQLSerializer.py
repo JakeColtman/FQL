@@ -21,3 +21,7 @@ class SqlSerializer:
         output += "\n"
         output += nodeList[-1].text
         return output
+
+    def serialize(self):
+        node = self.graph.list_of_nodes_on_which_nothing_depends()[0]
+        return self.serialize_to_node(node)

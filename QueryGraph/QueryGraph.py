@@ -36,6 +36,16 @@ class QueryGraph:
                 for dependency in node.get_dependencies():
                     old_node.add_dependency_node(dependency)
 
+    def list_of_nodes_on_which_nothing_depends(self):
+        output = []
+        all_nodes = [self.node_lookup[x] for x in self.node_lookup]
+        for node in all_nodes:
+            is_depended_on = any([node in x.get_dependencies() for x in all_nodes])
+            if not is_depended_on:
+                output.append(node)
+
+        return output
+
     def get_ordered_node_list_from_node(self, node: Node):
         output = [node]
         depList = node.get_dependencies()
