@@ -1,6 +1,7 @@
 from QueryGraph.QueryGraph import QueryGraph
 import unittest
 from Nodes.SqlCTE import SqlCTENode
+from Nodes.PlaceholderNode import PlaceholderNode
 
 class QueryGeneratorTests(unittest.TestCase):
     def test_add_node(self):
@@ -78,4 +79,76 @@ class QueryGeneratorTests(unittest.TestCase):
 
         self.assertTrue(node is oldGraph.node_lookup["test"])
         self.assertEqual(len(oldGraph.node_lookup), 1)
+
+    def test_full_doesnt_replace_placeholder_nodes(self):
+        oldGraph = QueryGraph()
+        node = SqlCTENode("test", "Im the text content of the test node")
+        oldGraph.add_node(node)
+        newNode = PlaceholderNode("test", "Im the text content of the test node")
+        newGraph = QueryGraph()
+        newGraph.add_node(newNode)
+
+        oldGraph.full_replace(newGraph)
+
+        self.assertTrue(node is oldGraph.node_lookup["test"])
+
+    def test_full_replaces_proper_nodes(self):
+        oldGraph = QueryGraph()
+        node = SqlCTENode("test", "Im the text content of the test node")
+        oldGraph.add_node(node)
+        newNode = SqlCTENode("test", "Im the text content of the test node")
+        newGraph = QueryGraph()
+        newGraph.add_node(newNode)
+
+        oldGraph.full_replace(newGraph)
+
+        self.assertTrue(newNode is oldGraph.node_lookup["test"])
+
+    def test_full_replace_segment_adds_new_node(self):
+        oldGraph = QueryGraph()
+        node = SqlCTENode("test", "Im the text content of the test node")
+        node1 = SqlCTENode("test1", "Im the text content of the test node")
+        node.add_dependency_node(node1)
+        oldGraph.add_node(node)
+        oldGraph.add_node(node1)
+
+        newNode = PlaceholderNode("test", "Im the text content of the test node")
+        newNode2 = SqlCTENode("test2", "Im the text content of the test node")
+        newNode1 = PlaceholderNode("test1", "Im the text content of the test node")
+        newNode.add_dependency_node(newNode2)
+        newNode2.add_dependency_node(newNode1)
+
+        newGraph = QueryGraph()
+
+        newGraph.add_node(newNode)
+        newGraph.add_node(newNode2)
+        newGraph.add_node(newNode1)
+
+        oldGraph.full_replace(newGraph)
+
+        self.assertTrue(oldGraph.get_node_by_name("test2") is newNode2)
+
+    def test_full_replace_segment_updates_dependencies(self):
+        oldGraph = QueryGraph()
+        node = SqlCTENode("test", "Im the text content of the test node")
+        node1 = SqlCTENode("test1", "Im the text content of the test node")
+        node.add_dependency_node(node1)
+        oldGraph.add_node(node)
+        oldGraph.add_node(node1)
+
+        newNode = PlaceholderNode("test", "Im the text content of the test node")
+        newNode2 = SqlCTENode("test2", "Im the text content of the test node")
+        newNode1 = PlaceholderNode("test1", "Im the text content of the test node")
+        newNode.add_dependency_node(newNode2)
+        newNode2.add_dependency_node(newNode1)
+
+        newGraph = QueryGraph()
+
+        newGraph.add_node(newNode)
+        newGraph.add_node(newNode2)
+        newGraph.add_node(newNode1)
+
+        oldGraph.full_replace(newGraph)
+
+        self.assertEqual(oldGraph.get_node_by_name("test").get_dependencies(), [newNode2])
 

@@ -26,9 +26,10 @@ class QueryGraph:
         return self
 
     def full_replace(self, query_graph: 'QueryGraph'):
-        for node in query_graph.node_lookup:
+        for node_name in query_graph.node_lookup:
+            node = query_graph.node_lookup[node_name]
             if type(node) != PlaceholderNode:
-                self.node_lookup[node.node.get_name()] = node
+                self.node_lookup[node.get_name()] = node
 
     def get_ordered_node_list_from_node(self, node: Node):
         output = [node]
