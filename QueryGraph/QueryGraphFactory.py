@@ -23,10 +23,21 @@ class QueryGraphFactory:
             stoppedList, addList = [x for x in depList if x.get_name() in stopping_names], [x for x in depList if x.get_name() not in stopping_names]
             [graph.add_node(copy(x)) for x in addList]
             for item in stoppedList:
-                graph.add_node(PlaceholderNode(item.get_name(), ""))
+                placeholderNode = PlaceholderNode(item.get_name(), "")
+                placeholderNode.dependencies = item.get_dependencies()
+                graph.add_node(placeholderNode)
             dependentNodes = [x.get_dependencies() for x in depList if x not in stoppedList]
             depList = [item for sublist in dependentNodes for item in sublist]
         return graph
+
+    def extract_graph_between_nodes(self, start_node : Node, end_node : Node):
+        graph = QueryGraph()
+        graph.add_node(start_node)
+
+        return graph
+
+    def combined_graphs(self, original_graph: QueryGraph, added_graph: QueryGraph):
+        return original_graph
 
     def extract_connected_graph_of_nodes(self, query_graph: QueryGraph,  node : Node):
         graph = QueryGraph()

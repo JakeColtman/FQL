@@ -25,16 +25,24 @@ class QueryGraph:
 
         return self
 
-    def full_replace(self, query_graph: 'QueryGraph'):
+    def add_query(self, query_graph: 'QueryGraph', replace = False):
+        '''
+            Use to combind queries together.  By default does a structural add, i.e. will only update the deps on
+            existing nodes and add new nodes to the graph
+
+            If replace = True then will wipe out existing nodes if there is a conflict.  Use carefully!
+        '''
         for node_name in query_graph.node_lookup:
             node = query_graph.node_lookup[node_name]
-            if type(node) != PlaceholderNode:
+            if type(node) != PlaceholderNode and (replace or node_name not in self.node_lookup):
                 self.node_lookup[node.get_name()] = node
             else:
                 old_node = self.node_lookup[node.get_name()]
                 old_node.dependencies = [x for x in old_node.get_dependencies() if x.get_name() not in query_graph.node_lookup]
                 for dependency in node.get_dependencies():
                     old_node.add_dependency_node(dependency)
+
+
 
     def list_of_nodes_on_which_nothing_depends(self):
         output = []
