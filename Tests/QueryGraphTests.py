@@ -51,3 +51,31 @@ class QueryGeneratorTests(unittest.TestCase):
         oldGraph.value_replace(newGraph)
 
         self.assertEqual(oldGraph.get_node_by_name("test").get_text(),"im the new content")
+
+    def test_value_replace_updates_docstring(self):
+        oldGraph = QueryGraph()
+        node = SqlCTENode("test", "Im the text content of the test node")
+        node.set_docstring("im a doc string")
+        oldGraph.add_node(node)
+        newNode = SqlCTENode("test", "Im the text content of the test node")
+        newNode.set_docstring("im a new doc string")
+        newGraph = QueryGraph()
+        newGraph.add_node(newNode)
+
+        oldGraph.value_replace(newGraph)
+
+        self.assertEqual(oldGraph.get_node_by_name("test").get_docstring(),"im a new doc string")
+
+    def test_value_replace_doesnt_change_structure(self):
+        oldGraph = QueryGraph()
+        node = SqlCTENode("test", "Im the text content of the test node")
+        oldGraph.add_node(node)
+        newNode = SqlCTENode("test2", "Im the text content of the test node")
+        newGraph = QueryGraph()
+        newGraph.add_node(newNode)
+
+        oldGraph.value_replace(newGraph)
+
+        self.assertTrue(node is oldGraph.node_lookup["test"])
+        self.assertEqual(len(oldGraph.node_lookup), 1)
+

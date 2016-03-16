@@ -15,6 +15,9 @@ class QueryGraph:
 
     def value_replace(self, query_graph: 'QueryGraph'):
         for node_name in query_graph.node_lookup:
+            if node_name not in self.node_lookup:
+                continue
+
             node = query_graph.node_lookup[node_name]
             if type(node) != PlaceholderNode:
                 self.node_lookup[node.get_name()].set_docstring(node.get_docstring())
