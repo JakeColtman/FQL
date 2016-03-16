@@ -32,7 +32,7 @@ class QueryGraph:
                 self.node_lookup[node.get_name()] = node
             else:
                 old_node = self.node_lookup[node.get_name()]
-                old_node.dependencies = []
+                old_node.dependencies = [x for x in old_node.get_dependencies() if x.get_name() not in query_graph.node_lookup]
                 for dependency in node.get_dependencies():
                     old_node.add_dependency_node(dependency)
 

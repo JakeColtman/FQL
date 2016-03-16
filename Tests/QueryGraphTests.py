@@ -152,3 +152,30 @@ class QueryGeneratorTests(unittest.TestCase):
 
         self.assertEqual(oldGraph.get_node_by_name("test").get_dependencies(), [newNode2])
 
+    def test_full_replace_segment_updates_dependencies(self):
+        oldGraph = QueryGraph()
+        node = SqlCTENode("test", "Im the text content of the test node")
+        node1 = SqlCTENode("test1", "Im the text content of the test node")
+        node3 = SqlCTENode("test3", "Fill me!")
+        node.add_dependency_node(node1)
+        node.add_dependency_node(node3)
+        oldGraph.add_node(node)
+        oldGraph.add_node(node1)
+        oldGraph.add_node(node3)
+
+        newNode = PlaceholderNode("test", "Im the text content of the test node")
+        newNode2 = SqlCTENode("test2", "Im the text content of the test node")
+        newNode1 = PlaceholderNode("test1", "Im the text content of the test node")
+        newNode.add_dependency_node(newNode2)
+        newNode2.add_dependency_node(newNode1)
+
+        newGraph = QueryGraph()
+
+        newGraph.add_node(newNode)
+        newGraph.add_node(newNode2)
+        newGraph.add_node(newNode1)
+
+        oldGraph.full_replace(newGraph)
+
+        self.assertTrue(newNode2 in oldGraph.get_node_by_name("test").get_dependencies())
+        self.assertTrue(node3 in oldGraph.get_node_by_name("test").get_dependencies())
