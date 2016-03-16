@@ -69,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QueryGraphTests.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="QueryGraphTests.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Tests/QueryGraphTests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="45" />
+            <state vertical-scroll-proportion="0.6873563">
+              <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
@@ -81,14 +81,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QueryGraphFactoryTests.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="QueryGraphFactoryTests.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tests/QueryGraphFactoryTests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.15632184">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="38" column="55" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="55" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NodeList.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Serializer/NodeList.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -97,7 +107,17 @@
         <entry file="file://$PROJECT_DIR$/QueryGraph/QueryGraphFactory.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+              <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlaceholderNode.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Nodes/PlaceholderNode.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -107,7 +127,7 @@
         <entry file="file://$PROJECT_DIR$/QueryGraph/QueryGraph.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+              <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -129,7 +149,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Tests/Parser.py" />
         <option value="$PROJECT_DIR$/Tests/Query.py" />
         <option value="$PROJECT_DIR$/Tests/TestQueryGeneratorTest.py" />
         <option value="$PROJECT_DIR$/connection_string.txt" />
@@ -171,15 +190,16 @@
         <option value="$PROJECT_DIR$/Nodes/SqlTableNode.py" />
         <option value="$PROJECT_DIR$/process.py" />
         <option value="$PROJECT_DIR$/Nodes/PlaceholderNode.py" />
-        <option value="$PROJECT_DIR$/QueryGraph/QueryGraph.py" />
         <option value="$PROJECT_DIR$/Serializer/SQLSerializer.py" />
         <option value="$PROJECT_DIR$/DomainModel/Columns/Column.py" />
         <option value="$PROJECT_DIR$/Parser/SqlParser.py" />
         <option value="$PROJECT_DIR$/Tests/SqlParserTests.py" />
         <option value="$PROJECT_DIR$/DomainModel/Columns/ColumnFactory.py" />
-        <option value="$PROJECT_DIR$/Tests/QueryGraphTests.py" />
+        <option value="$PROJECT_DIR$/Serializer/NodeList.py" />
         <option value="$PROJECT_DIR$/Tests/QueryGraphFactoryTests.py" />
         <option value="$PROJECT_DIR$/QueryGraph/QueryGraphFactory.py" />
+        <option value="$PROJECT_DIR$/Tests/QueryGraphTests.py" />
+        <option value="$PROJECT_DIR$/QueryGraph/QueryGraph.py" />
       </list>
     </option>
   </component>
@@ -244,6 +264,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FQL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FQL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Serializer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -358,49 +392,7 @@
       <recent name="C:\Users\j.coltman\Documents\GitHub\FQL\Connections\SQL" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Nosetests in QueryGraphFactoryTests">
-    <configuration default="false" name="Nosetests in SqlParserTests" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="FQL" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tests/SqlParserTests.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Nosetest SQLParserTests.test_identifies_multiple_select_columns" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="FQL" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tests/SqlParserTests.py" />
-      <option name="CLASS_NAME" value="SQLParserTests" />
-      <option name="METHOD_NAME" value="test_identifies_multiple_select_columns" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_METHOD" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Nosetest QueryGeneratorTests.test_value_replace_updates_text">
     <configuration default="false" name="Nosetests in QueryGraphTests" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -458,6 +450,48 @@
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
       <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Nosetest QueryGeneratorTests.test_truncated_stops_at_trunction" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="FQL" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tests/QueryGraphFactoryTests.py" />
+      <option name="CLASS_NAME" value="QueryGeneratorTests" />
+      <option name="METHOD_NAME" value="test_truncated_stops_at_trunction" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Nosetest QueryGeneratorTests.test_value_replace_updates_text" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="FQL" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tests/QueryGraphTests.py" />
+      <option name="CLASS_NAME" value="QueryGeneratorTests" />
+      <option name="METHOD_NAME" value="test_value_replace_updates_text" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
       <option name="PARAMS" value="" />
@@ -587,19 +621,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.Nosetests in SqlParserTests" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Nosetest SQLParserTests.test_identifies_multiple_select_columns" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Nosetests in QueryGraphTests" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Nosetest QueryGeneratorTests.test_node_list_contains_all_nodes" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Nosetests in QueryGraphFactoryTests" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.Nosetests in QueryGraphTests" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Nosetest QueryGeneratorTests.test_node_list_contains_all_nodes" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Nosetests in QueryGraphFactoryTests" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Nosetest QueryGeneratorTests.test_truncated_stops_at_trunction" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Nosetest QueryGeneratorTests.test_value_replace_updates_text" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Nosetests in QueryGraphFactoryTests" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Nosetest QueryGeneratorTests.test_node_list_contains_all_nodes" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Nosetests in QueryGraphTests" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Nosetests in SqlParserTests" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Nosetest SQLParserTests.test_identifies_multiple_select_columns" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Nosetest QueryGeneratorTests.test_value_replace_updates_text" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Nosetest QueryGeneratorTests.test_truncated_stops_at_trunction" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Nosetests in QueryGraphFactoryTests" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Nosetest QueryGeneratorTests.test_node_list_contains_all_nodes" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Nosetests in QueryGraphTests" />
       </list>
     </recent_temporary>
   </component>
@@ -617,35 +651,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Nosetest_QueryGeneratorTests_test_node_list_contains_all_nodes - 2016.03.16 at 18h 42m 48s.xml">
-      <configuration name="Nosetest QueryGeneratorTests.test_node_list_contains_all_nodes" configurationId="tests" />
+    <history-entry file="Nosetest_QueryGeneratorTests_test_truncated_stops_at_trunction - 2016.03.16 at 20h 14m 38s.xml">
+      <configuration name="Nosetest QueryGeneratorTests.test_truncated_stops_at_trunction" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetest_QueryGeneratorTests_test_node_list_contains_all_nodes - 2016.03.16 at 18h 44m 01s.xml">
-      <configuration name="Nosetest QueryGeneratorTests.test_node_list_contains_all_nodes" configurationId="tests" />
+    <history-entry file="Nosetest_QueryGeneratorTests_test_truncated_stops_at_trunction - 2016.03.16 at 20h 15m 06s.xml">
+      <configuration name="Nosetest QueryGeneratorTests.test_truncated_stops_at_trunction" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetest_QueryGeneratorTests_test_node_list_contains_all_nodes - 2016.03.16 at 18h 44m 18s.xml">
-      <configuration name="Nosetest QueryGeneratorTests.test_node_list_contains_all_nodes" configurationId="tests" />
+    <history-entry file="Nosetest_QueryGeneratorTests_test_truncated_stops_at_trunction - 2016.03.16 at 20h 15m 25s.xml">
+      <configuration name="Nosetest QueryGeneratorTests.test_truncated_stops_at_trunction" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetest_SQLParserTests_test_identifies_multiple_select_columns - 2016.03.16 at 18h 34m 22s.xml">
-      <configuration name="Nosetest SQLParserTests.test_identifies_multiple_select_columns" configurationId="tests" />
+    <history-entry file="Nosetest_QueryGeneratorTests_test_truncated_stops_at_trunction - 2016.03.16 at 20h 15m 52s.xml">
+      <configuration name="Nosetest QueryGeneratorTests.test_truncated_stops_at_trunction" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetest_SQLParserTests_test_identifies_multiple_select_columns - 2016.03.16 at 18h 35m 09s.xml">
-      <configuration name="Nosetest SQLParserTests.test_identifies_multiple_select_columns" configurationId="tests" />
+    <history-entry file="Nosetest_QueryGeneratorTests_test_truncated_stops_at_trunction - 2016.03.16 at 20h 17m 03s.xml">
+      <configuration name="Nosetest QueryGeneratorTests.test_truncated_stops_at_trunction" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_QueryGraphFactoryTests - 2016.03.16 at 20h 07m 47s.xml">
-      <configuration name="Nosetests in QueryGraphFactoryTests" configurationId="tests" />
+    <history-entry file="Nosetest_QueryGeneratorTests_test_truncated_stops_at_trunction - 2016.03.16 at 20h 20m 11s.xml">
+      <configuration name="Nosetest QueryGeneratorTests.test_truncated_stops_at_trunction" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetest_QueryGeneratorTests_test_value_replace_updates_text - 2016.03.16 at 20h 23m 37s.xml">
+      <configuration name="Nosetest QueryGeneratorTests.test_value_replace_updates_text" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetest_QueryGeneratorTests_test_value_replace_updates_text - 2016.03.16 at 20h 24m 20s.xml">
+      <configuration name="Nosetest QueryGeneratorTests.test_value_replace_updates_text" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetest_QueryGeneratorTests_test_value_replace_updates_text - 2016.03.16 at 20h 24m 57s.xml">
+      <configuration name="Nosetest QueryGeneratorTests.test_value_replace_updates_text" configurationId="tests" />
     </history-entry>
     <history-entry file="Nosetests_in_QueryGraphFactoryTests - 2016.03.16 at 20h 08m 12s.xml">
       <configuration name="Nosetests in QueryGraphFactoryTests" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_in_QueryGraphTests - 2016.03.16 at 18h 40m 01s.xml">
-      <configuration name="Nosetests in QueryGraphTests" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_in_SqlParserTests - 2016.03.16 at 18h 34m 07s.xml">
-      <configuration name="Nosetests in SqlParserTests" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_in_SqlParserTests - 2016.03.16 at 18h 36m 08s.xml">
-      <configuration name="Nosetests in SqlParserTests" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -704,14 +738,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Tests/RepositoryTests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/QueryGenerator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -995,14 +1021,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Nodes/PlaceholderNode.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Serializer/SQLSerializer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1107,10 +1125,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/QueryGraphTests.py">
+    <entry file="file://$PROJECT_DIR$/Serializer/NodeList.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="45" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QueryGraph/QueryGraph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Nodes/PlaceholderNode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/QueryGraphFactoryTests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="55" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="55" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>
@@ -1120,23 +1162,15 @@
     <entry file="file://$PROJECT_DIR$/QueryGraph/QueryGraphFactory.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/QueryGraph/QueryGraph.py">
+    <entry file="file://$PROJECT_DIR$/Tests/QueryGraphTests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/QueryGraphFactoryTests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15632184">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.6873563">
+          <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>

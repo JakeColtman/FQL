@@ -40,3 +40,14 @@ class QueryGeneratorTests(unittest.TestCase):
 
         self.assertEquals([node3, node2, node1, node], graph.get_ordered_node_list_from_node(node))
         self.assertEquals([node3, node2, node1], graph.get_ordered_node_list_from_node(node1))
+
+    def test_value_replace_updates_text(self):
+        oldGraph = QueryGraph()
+        oldGraph.add_node(SqlCTENode("test", "Im the text content of the test node"))
+
+        newGraph = QueryGraph()
+        newGraph.add_node(SqlCTENode("test", "im the new content"))
+
+        oldGraph.value_replace(newGraph)
+
+        self.assertEqual(oldGraph.get_node_by_name("test").get_text(),"im the new content")
